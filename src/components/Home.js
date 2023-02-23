@@ -11,9 +11,9 @@ const Home = () => {
 
         })}
       </div> */}
-      <div>
+      <div className="imgBio">
       <img src={require("./assets/avatarAnimation/9.png")}></img>
-      <div className="bioContainer">
+      <div>
       <h2>My name is Erin and I am a full-stack software developer.</h2>
       <h3>Where I began</h3>
       <p>

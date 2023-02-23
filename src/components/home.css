@@ -7,11 +7,7 @@ img{
     flex-direction: column;
 }
 
-div {
+.imgBio {
     display: flex;
-}
-
-.bioContainer{
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }

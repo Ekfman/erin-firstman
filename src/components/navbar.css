@@ -1,0 +1,16 @@
+.navbar{
+    display: flex;
+    justify-content: right;
+}
+
+ul{
+    display: flex;
+    justify-content: right;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 14px;
+
+}
