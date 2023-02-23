@@ -1,0 +1,8 @@
+const journalArr = []
+
+journalArr.push("./e-journal_imgs/login.png")
+journalArr.push("./e-journal_imgs/calendarView.png")
+journalArr.push("./e-journal_imgs/editEntry.png")
+journalArr.push("./e-journal_imgs/allEntries.png")
+
+export default journalArr;

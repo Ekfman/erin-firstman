@@ -6,11 +6,12 @@
 ul{
     display: flex;
     justify-content: right;
+    text-decoration: none;
+    list-style: none;
 }
 
-li{
+.nav-link {
     text-decoration: none;
     list-style: none;
     margin-left: 14px;
-
 }

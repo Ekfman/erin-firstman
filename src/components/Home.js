@@ -1,6 +1,7 @@
 import avatarArr from "./assets/avatarArray";
 import "./home.css"
 const Home = () => {
+    console.log(avatarArr);
     return (
     <div className="parentContainer">
       <h1>A SNAPSHOT OF ME.</h1>
@@ -32,9 +33,9 @@ const Home = () => {
       <p>
         In July of 2022, I began a 6-month Software Developer program. While
         learning the PERN stack (postgreSQL, Express.js, React.js, Node.js) I
-        also discovered my love for technical problem-solving. The feeling of
-        solving a bug after countless sighs, face-rubbing, and keyboard smashing
-        is incomparable.
+        also discovered my love for technical problem-solving. The high from
+        fixing a bug after countless sighs, face-rubbing, and keyboard-smashing
+        is an incomparable feeling.
       </p>
       </div>
       </div>

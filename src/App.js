@@ -2,6 +2,7 @@ import Nabvar from "./components/Navbar";
 import avatarArr from "./components/assets/avatarArray";
 import Home from "./components/Home"
 import "./app.css"
+import Projects from "./components/Projects";
 
 const App = () => {
     console.log(avatarArr);
@@ -9,6 +10,7 @@ const App = () => {
         <div>
             <Nabvar/>
             <Home/>
+            <Projects/>
         </div>
     )
 }
