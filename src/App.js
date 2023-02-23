@@ -1,8 +1,11 @@
+import Nabvar from "./components/Navbar";
+import avatarArr from "./components/assets/avatarArray";
 
 const App = () => {
+    console.log(avatarArr);
     return (
         <div>
-            Hello
+            <Nabvar/>
         </div>
     )
 }
