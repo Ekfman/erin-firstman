@@ -9,7 +9,7 @@ const Contact = () => {
         <br></br>
         <div className="name-email-div">
           <div className="form-label">
-            <label>NAME</label>
+            <label>NAMEEEE</label>
             <input></input>
           </div>
           <div className="form-label">
