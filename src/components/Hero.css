@@ -1,0 +1,10 @@
+.hero-container {
+    background-color: rgb(240, 229, 138);
+    width: 100% !important;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("./assets/banner.jpg");
+    background-size:contain; */
+}

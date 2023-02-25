@@ -5,7 +5,7 @@ import "./projects.css";
 const Projects = () => {
   const [digitalDiaryImg, setDigitalDiaryImg] = useState([]);
   return (
-    <div>
+    <div id="projects">
       <h2>Check out my projects.</h2>
       <div className="project-container">
         <div className="projectImg-title">

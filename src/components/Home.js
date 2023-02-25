@@ -3,7 +3,7 @@ import "./home.css"
 const Home = () => {
     console.log(avatarArr);
     return (
-    <div className="parentContainer">
+    <div className="parentContainer" id="home">
       <h1>A SNAPSHOT OF ME.</h1>
       {/* <div>
         {avatarArr.map( (img) => {
@@ -15,7 +15,6 @@ const Home = () => {
       <div className="imgBio">
       <img src={require("./assets/avatarAnimation/9.png")}></img>
       <div>
-      <h2>My name is Erin and I am a full-stack software developer.</h2>
       <h3>Where I began</h3>
       <p>
         Originally my career started in marketing. I've worn many hats from

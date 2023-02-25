@@ -5,9 +5,16 @@ img{
 .parentContainer {
     display: flex;
     flex-direction: column;
+    padding: 0px 10% 0px 10%;
 }
 
 .imgBio {
     display: flex;
     flex-direction: row;
 }
+
+.cursiveFont{
+    font-family:'Just Another Hand';
+    font-size: xx-large;
+}
+

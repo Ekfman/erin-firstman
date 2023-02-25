@@ -1,5 +1,10 @@
+html, body {
+    padding: 0 !important;
+    margin: 0px !important;
+}
+
 body {
-    padding: 0px 10% 0px 10%;
+    /* padding: 0px 10% 0px 10%; */
     height: 100vh;
 }
 
