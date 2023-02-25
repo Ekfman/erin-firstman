@@ -1,0 +1,47 @@
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(165, 220, 242);
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px 200px 0px;
+    width: 50%;
+    margin: 50px;
+}
+
+.name-email-div{
+    display: flex;
+    /* border: 2px solid black; */
+    width: 75%;
+    /* align-items: center; */
+}
+
+.form-label{
+    margin-top: 20px;
+}
+
+input{
+    height: 30px;
+    width: 500px;
+    border: none;
+    border-bottom: 1px black solid;
+    background-color: rgb(165, 220, 242);
+}
+
+.contact-message{
+    width: 75%;
+}
+
+label{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+}

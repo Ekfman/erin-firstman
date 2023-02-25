@@ -1,5 +1,6 @@
 img{
-    width: 400px;
+    width: 50%;
+    height: fit-content;
 }
 
 .parentContainer {
@@ -11,10 +12,5 @@ img{
 .imgBio {
     display: flex;
     flex-direction: row;
-}
-
-.cursiveFont{
-    font-family:'Just Another Hand';
-    font-size: xx-large;
 }
 

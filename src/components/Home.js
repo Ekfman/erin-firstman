@@ -1,19 +1,25 @@
+import { useState, useEffect } from "react";
 import avatarArr from "./assets/avatarArray";
 import "./home.css"
 const Home = () => {
     console.log(avatarArr);
+    const [num, setNum] =  useState(1);
+    useEffect( () => {
+        setInterval( () => {
+                setNum( prev => prev < 9 ? prev + 1 : prev)
+        }, 300)
+    }, [])
     return (
     <div className="parentContainer" id="home">
       <h1>A SNAPSHOT OF ME.</h1>
-      {/* <div>
-        {avatarArr.map( (img) => {
+      <div>
+        {/* {avatarArr.map( (img) => {
             return (
             <img alt="Image of my avatar" src={require(`./assets/${img}`)}/>)
-
-        })}
-      </div> */}
+        })} */}
+      </div>
       <div className="imgBio">
-      <img src={require("./assets/avatarAnimation/9.png")}></img>
+      <img src={require(`./assets/avatarAnimation/${num}.png`)}></img>
       <div>
       <h3>Where I began</h3>
       <p>
