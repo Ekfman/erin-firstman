@@ -3,8 +3,8 @@ import "./navbar.css";
 
 const Nabvar = () => {
   return (
-    <div className="navbar">
-      <ul>
+    <div className="navbarHeader" >
+      <nav className="navbar">
         <li className="nav-link">
           <Link to="home" spy={true} smooth={true} offset={-50} duratoin={500}></Link>Home
         </li>
@@ -17,7 +17,7 @@ const Nabvar = () => {
         <li className="nav-link">
           <Link to="contact" spy={true} smooth={true} offset={-100} duratoin={500}>Contact Me</Link>
         </li>
-      </ul>
+      </nav>
     </div>
   );
 };

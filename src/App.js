@@ -3,7 +3,7 @@ import avatarArr from "./components/assets/avatarArray";
 import Home from "./components/Home"
 import "./app.css"
 import Projects from "./components/Projects";
-import Hero from "./components/Hero";
+// import Hero from "./components/Hero";
 import Contact from "./components/Contact";
 
 // console.log('Contact :>> ', Contact);
@@ -14,7 +14,7 @@ const App = () => {
     return (
         <div>
             <Nabvar/>
-            <Hero/>
+            {/* <Hero/> */}
             <Home/>
             <Projects/>
             <Contact/>

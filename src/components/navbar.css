@@ -1,16 +1,33 @@
-.navbar{
-    display: flex;
-    justify-content: right;
+.navbarHeader{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f4e9d7;
+
 }
 
-ul{
+.navbar{
     display: flex;
-    justify-content: right;
-    margin-right: 10%;
+    justify-content: center !important;
+   height: 60px;
+   align-items: center;
+}
+
+body{
+    position: relative;
 }
 
 .nav-link {
     text-decoration: none;
     list-style: none;
     margin-left: 14px;
+    color: white; 
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid white;
+    cursor: pointer;
 }

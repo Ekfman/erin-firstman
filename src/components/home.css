@@ -7,6 +7,7 @@ img{
     display: flex;
     flex-direction: column;
     padding: 0px 10% 0px 10%;
+    margin-top: 90px;
 }
 
 .imgBio {
@@ -14,3 +15,56 @@ img{
     flex-direction: row;
 }
 
+.intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+    border: 2px solid rgba(255, 0, 0, 0)
+
+}
+
+.hi{
+    font-size: 150px;
+    display: flex;
+    /* color: rgb(231, 225, 139); */
+    
+}
+
+.banner{
+    /* border: 2px solid black; */
+    height: fit-content;
+    margin-left: 18px;
+}
+
+.subheaders{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+}
+
+.snapshot{
+    background-color: #f4e9d7;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 12px;
+    margin-left: -3px;
+}
+
+.cursiveFont{
+    color: #dfd6c7;
+    /* font-size: 60px; */
+}
+
+/* .content{
+    border: solid 2px#f4e9d7;
+    border-radius: 12px;
+    padding: 10px;
+} */
+
+h3{
+    border-bottom: solid #f4e9d7 2px;
+    padding-bottom: 6px;
+}

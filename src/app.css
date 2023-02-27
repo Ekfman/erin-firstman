@@ -6,6 +6,8 @@ html, body {
 body {
     /* padding: 0px 10% 0px 10%; */
     height: 100vh;
+    /* background-color: rgb(218, 203, 184); */
+    font-size: large;
 }
 
 div {
@@ -33,4 +35,8 @@ p {
     line-height: 1.5em;
 }
 
+input:focus,
+#alphatxt:focus {
+    outline: 0;
+}
 

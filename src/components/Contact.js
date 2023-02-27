@@ -3,13 +3,14 @@ const Contact = () => {
   return (
     <div id="contact" className="form-container">
       <form className="form">
+      {/* <div className="component-line">hi</div> */}
         <h1>Say Hello!</h1>
         <br></br>
         <br></br>
         <br></br>
         <div className="name-email-div">
           <div className="form-label">
-            <label>NAMEEEE</label>
+            <label>NAME</label>
             <input></input>
           </div>
           <div className="form-label">

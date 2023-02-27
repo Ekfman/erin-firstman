@@ -6,23 +6,24 @@ const Home = () => {
     const [num, setNum] =  useState(1);
     useEffect( () => {
         setInterval( () => {
-                setNum( prev => prev < 9 ? prev + 1 : prev)
+                setNum( prev => prev < 10 ? prev + 1 : prev)
         }, 300)
     }, [])
     return (
     <div className="parentContainer" id="home">
-      <h1>A SNAPSHOT OF ME.</h1>
-      <div>
-        {/* {avatarArr.map( (img) => {
-            return (
-            <img alt="Image of my avatar" src={require(`./assets/${img}`)}/>)
-        })} */}
-      </div>
+        <div className="intro">
+        <h1 className="hi">Hi.</h1>
+      <h1 className="banner">
+        My name is <span className="cursiveFont">Erin Firstman</span> and I am a
+        full-stack <span>software developer</span>.
+      </h1>
+        </div>
       <div className="imgBio">
       <img src={require(`./assets/avatarAnimation/${num}.png`)}></img>
       <div>
+      <h1 className="snapshot">A SNAPSHOT OF ME.</h1>
       <h3>Where I began</h3>
-      <p>
+      <p className="content">
         Originally my career started in marketing. I've worn many hats from
         managing seven social media channels, repairing and modernizing
         websites, project management for key marketing initiatives, and serving

@@ -4,11 +4,34 @@
     flex-direction: row;
     /* align-items: center; */
     height: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .projectImg-title{
     display: flex;
+    margin: 0px 18px 0px 18px;
+    align-items: center;
     /* flex-direction: column; */
-    border: 2px solid black;
+    border: 3px solid #f4e9d7;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.projectImg{
+    width: 100%;
+}
+
+.project-type{
+    height: fit-content;
+    margin-top: -2px;
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+.component-line{
+    border-top: 5px solid #f4e9d7; 
+    width: 100px;
+    color: white;
+    margin-top: 20px;
 }
