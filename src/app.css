@@ -17,11 +17,12 @@ div {
 
 h2 {
     font-family: 'Poppins', sans-serif;
+    font-weight: 800;
 }
 
 h1 {
     font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 800;
+    font-size: 160px;
 }
 
 h3 {
@@ -39,4 +40,11 @@ input:focus,
 #alphatxt:focus {
     outline: 0;
 }
+
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
 

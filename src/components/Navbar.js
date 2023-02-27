@@ -6,16 +6,19 @@ const Nabvar = () => {
     <div className="navbarHeader" >
       <nav className="navbar">
         <li className="nav-link">
-          <Link to="home" spy={true} smooth={true} offset={-50} duratoin={500}></Link>Home
+          <Link to="home" spy={true} smooth={true} offset={-50} duration={500}>Home</Link>
         </li>
         <li className="nav-link">
-          <Link to="projects" spy={true} smooth={true} offset={-20} duratoin={500}>Projects</Link>
+          <Link to="about" spy={true} smooth={true} offset={-50} duration={500}>About</Link>
         </li>
         <li className="nav-link">
-          <Link to="resume" spy={true} smooth={true} offset={-100} duratoin={500}>Resume</Link>
+          <Link to="projects" spy={true} smooth={true} offset={-20} duration={500}>Projects</Link>
         </li>
         <li className="nav-link">
-          <Link to="contact" spy={true} smooth={true} offset={-100} duratoin={500}>Contact Me</Link>
+          <Link to="contact" spy={true} smooth={true} offset={-100} duration={500}>Contacts</Link>
+        </li>
+        <li className="nav-link">
+          <a src="./assets/Firstman_Resume.pdf">Resume</a>
         </li>
       </nav>
     </div>

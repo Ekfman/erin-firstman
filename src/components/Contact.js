@@ -4,7 +4,7 @@ const Contact = () => {
     <div id="contact" className="form-container">
       <form className="form">
       {/* <div className="component-line">hi</div> */}
-        <h1>Say Hello!</h1>
+        <h2>Say Hello!</h2>
         <br></br>
         <br></br>
         <br></br>
