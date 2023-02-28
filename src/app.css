@@ -1,12 +1,13 @@
 html, body {
     padding: 0 !important;
-    margin: 0px !important;
+    margin: 0px;
 }
 
 body {
     /* padding: 0px 10% 0px 10%; */
     height: 100vh;
-    /* background-color: rgb(218, 203, 184); */
+    /* background-color: #978b95; */
+    background-color: #706267;
     font-size: large;
 }
 
@@ -16,8 +17,9 @@ div {
 }
 
 h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-weight: 800;
+    color: #4c4447;
 }
 
 h1 {
@@ -28,12 +30,17 @@ h1 {
 h3 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 600;
+    color: #f6efe5;
+    letter-spacing: .2em;
 }
 
 p {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 300;
+    font-family:'Barlow Condensed', sans-serif;
+    font-size: 16px;
     line-height: 1.5em;
+    color: rgb(238, 238, 238);
+    margin-top: -20px;
+    letter-spacing: .1em;
 }
 
 input:focus,

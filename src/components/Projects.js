@@ -5,9 +5,8 @@ import "./projects.css";
 const Projects = () => {
   const [digitalDiaryImg, setDigitalDiaryImg] = useState([]);
   return (
-    <div id="projects">
+    <div id="projects" className="margin-top">
         <center>
-            <div className="component-line">hi</div>
       <h2 className="snapshot">MY PROJECTS.</h2>
       <div className="project-container">
         <div className="projectImg-title">

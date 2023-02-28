@@ -2,9 +2,12 @@
 .project-container{
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     height: 100%;
     /* border: 2px solid red; */
+}
+
+.margin-top{
+    margin-top: 80px;
 }
 
 .projectImg-title{
@@ -12,7 +15,8 @@
     margin: 0px 18px 0px 18px;
     align-items: center;
     /* flex-direction: column; */
-    border: 3px solid #f4e9d7;
+    border: 5px solid #4c4447;
+    /* background-color: #4c4447; */
     padding: 12px;
     border-radius: 12px;
 }
@@ -26,12 +30,4 @@
     margin-top: -2px;
     font-style: italic;
     font-size: 18px;
-}
-
-
-.component-line{
-    border-top: 5px solid #f4e9d7; 
-    width: 100px;
-    color: white;
-    margin-top: 20px;
 }

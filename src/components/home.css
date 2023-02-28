@@ -1,9 +1,9 @@
 .hero{
     margin-top: 60px;
-    /* width: auto; */
     height: 100vh;
-    background-image: url("../components/assets/hero.jpg");
-    /* object-fit: fill; */
+    background-size: cover;
+    background-image: url("../components/assets/hero2.jpg");
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
 }
@@ -19,4 +19,5 @@
 
 .hero-sub {
     margin-top: -60px;
+    color: #f4e9d7;;
 }
