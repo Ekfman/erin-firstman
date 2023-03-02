@@ -5,10 +5,17 @@ img{
 
 .parentContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 0px 10% 0px 10%;
     margin-top: 50px;
 }
+
+/* .detail{
+    width: 1200px;
+    background-color: #928489;
+    border-radius: 200px;
+    margin-left: -180px;
+} */
 
 .imgBio {
     display: flex;
@@ -37,6 +44,7 @@ img{
     border-radius: 12px;
     padding: 20px;
     margin-top: 35px;
+    background-color: #928489;
 }
 
 .subheaders{

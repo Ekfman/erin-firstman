@@ -15,7 +15,7 @@
     margin: 0px 18px 0px 18px;
     align-items: center;
     /* flex-direction: column; */
-    border: 5px solid #4c4447;
+    background-color: #928489;
     /* background-color: #4c4447; */
     padding: 12px;
     border-radius: 12px;
@@ -29,5 +29,9 @@
     height: fit-content;
     margin-top: -2px;
     font-style: italic;
-    font-size: 18px;
+    font-size: 16px;
+}
+
+.project-description{
+    padding: 15px;
 }

@@ -7,7 +7,5 @@ avatarArr.push("avatarAnimation/4.png")
 avatarArr.push("avatarAnimation/5.png")
 avatarArr.push("avatarAnimation/6.png")
 avatarArr.push("avatarAnimation/7.png")
-avatarArr.push("avatarAnimation/8.png")
-avatarArr.push("avatarAnimation/9.png")
 
 export default avatarArr;
