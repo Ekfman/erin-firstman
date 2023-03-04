@@ -1,20 +1,24 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import avatarArr from "./assets/avatarArray";
 import "./about.css";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
-  console.log(avatarArr);
+    const  { ref: aboutContainer, inView } = useInView()
+    console.log('inView :>> ', inView);
   const [num, setNum] = useState(1);
+ 
   useEffect(() => {
     setInterval(() => {
       setNum((prev) => (prev < 7 ? prev + 1 : prev));
     }, 300);
   }, []);
+
   return (
     <div className="parentContainer" id="about">
       {/* <div className="detail">
         </div> */}
-      <div className="imgBio">
+      <div className="imgBio" id="scroll-item" ref={aboutContainer}>
         <img src={require(`./assets/avatarAnimation/${num}.png`)}></img>
         <div className="bio-container">
           <div className="bio-box">

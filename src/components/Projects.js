@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div id="projects" className="margin-top">
         <center>
-      <h2 className="snapshot">MY PROJECTS</h2>
+      <h2 className="project-title">MY PROJECTS</h2>
       <div className="project-container">
         <div className="projectImg-title">
           <img className="projectImg" src={require("./assets/e-journal_imgs/calendarView.png")}></img>

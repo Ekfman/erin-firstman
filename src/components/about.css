@@ -7,8 +7,10 @@ img{
     display: flex;
     flex-direction: row;
     padding: 0px 10% 0px 10%;
-    margin-top: 50px;
+    margin-top: 150px;
+    /* animation: appear; */
 }
+
 
 /* .detail{
     width: 1200px;
@@ -62,7 +64,6 @@ img{
     border-radius: 12px;
     margin-left: -3px;
     margin-top: -40px;
-
 }
 
 .cursiveFont{

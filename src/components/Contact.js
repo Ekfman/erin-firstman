@@ -1,11 +1,25 @@
-import { useNavigate } from "react-router-dom";
+import { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
 import "./contact.css";
 
 const Contact = () => {
-  const navigate = useNavigate();
+  const form = useRef();
+  const [emailSent, setEmailSent] = useState(false)
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_3ikvh2n', 'template_vkiqcub', form.current, 'cucx8rZQRLEWqTH2L')
+      .then((result) => {
+          console.log(result.text);
+          console.log("message Sent");
+          setEmailSent(true)
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <div className="contact-container">
-    <form id="contact" className="form">
+    <div id="contact" className="form">
       <div className="hello-div">
         <h2>SAY</h2>
         <h2 className="hello">HELLO!</h2>
@@ -14,25 +28,31 @@ const Contact = () => {
           <a href="https://github.com/Ekfman"><img className="icon" src={require("./assets/icons/githubIcon.png")} alt="githublogo"></img></a>
         </div>
       </div>
-      <div className="contact">
-        <div className="name-email-div">
-          <div className="form-label">
-            <label>NAME</label>
-            <input></input>
+      <form className="contact" ref={form}>
+        {emailSent ? (
+          <h2>Thank you for your email!</h2>
+        ) : (
+          <>
+          <div className="name-email-div">
+            <div className="form-label">
+              <label>NAME</label>
+              <input type="text" name="user_name"></input>
+            </div>
+            <div className="form-label">
+              <label>EMAIL</label>
+              <input type="email" name="user"></input>
+            </div>
           </div>
-          <div className="form-label">
-            <label>EMAIL</label>
-            <input></input>
+          <br></br>
+          <div className="message-div">
+            <label>MESSAGE</label>
+            <textarea className="contact-message" name="message"></textarea>
           </div>
-        </div>
-        <br></br>
-        <div className="message-div">
-          <label>MESSAGE</label>
-          <textarea className="contact-message"></textarea>
-        </div>
-        <center><button>SEND</button></center>
-      </div>
-    </form>
+          <center><button type="submit" value="Send" onClick={sendEmail}>SEND</button></center>
+          </>
+        )}
+      </form>
+    </div>
     </div>
   );
 };

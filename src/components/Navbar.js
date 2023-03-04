@@ -21,9 +21,7 @@ const Nabvar = () => {
         </li>
         </div>
         <div>
-        <div className="resume">
-          <a src="./assets/Firstman_Resume.pdf">RESUME</a>
-        </div>
+          <a href="https://drive.google.com/drive/u/0/search?q=Firstman_Resume"><div className="resume">RESUME</div></a>
         </div>
       </nav>
     </div>
