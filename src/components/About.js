@@ -4,10 +4,10 @@ import "./about.css";
 import { useInView } from "react-intersection-observer";
 
 const About = () => {
-    const  { ref: aboutContainer, inView } = useInView()
-    console.log('inView :>> ', inView);
+  const { ref: aboutContainer, inView: bioVisible } = useInView();
+
   const [num, setNum] = useState(1);
- 
+
   useEffect(() => {
     setInterval(() => {
       setNum((prev) => (prev < 7 ? prev + 1 : prev));
@@ -16,15 +16,13 @@ const About = () => {
 
   return (
     <div className="parentContainer" id="about">
-      {/* <div className="detail">
-        </div> */}
       <div className="imgBio" id="scroll-item" ref={aboutContainer}>
-        <img src={require(`./assets/avatarAnimation/${num}.png`)}></img>
-        <div className="bio-container">
-          <div className="bio-box">
+        <img className={bioVisible && "av-animate"} src={require(`./assets/avatarAnimation/${num}.png`)}></img>
+        <div className="bio-container" >
+          <div className={bioVisible ? "bio-box-animate" : "bio-box"}>
             <h2 className="snapshot">A SNAPSHOT OF ME.</h2>
             <h3>where I began</h3>
-            <p className="content">
+            <p className={bioVisible ? "content-animate" : "content"}>
               Originally my career started in marketing. I've worn many hats
               from managing seven social media channels, repairing and
               modernizing websites, project management for key marketing
@@ -32,17 +30,18 @@ const About = () => {
               groups.
             </p>
             <h3>something was missing</h3>
-            <p className="content">
+            <p className={bioVisible ? "content-animate" : "content"}>
               After realizing that my favorite part of my marketing roles
               revolved around the websites and indirect customer interaction
               through UI, I knew my passion was somewhere else.
             </p>
             <h3>career change</h3>
-            <p className="content">
+            <p className={bioVisible ? "content-animate" : "content"}>
               In July of 2022, I began a 6-month Web Development program. While
               learning the PERN stack, I also discovered my love for technical
-              problem-solving. I view all projects like a game, and solving each bug as a level to complete.
-              This mindset makes me addicted to process and love what I do.
+              problem-solving. I view all projects like a game, and solving each
+              bug as a level to complete. This mindset makes me addicted to
+              process and love what I do.
             </p>
           </div>
         </div>

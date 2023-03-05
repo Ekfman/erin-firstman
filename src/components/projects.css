@@ -12,14 +12,46 @@
 
 .projectImg-title{
     display: flex;
-    margin: 0px 18px 0px 18px;
+    margin: 20px 18px 0px 18px;
     align-items: center;
-    /* flex-direction: column; */
     background-color: #928489;
-    /* background-color: #4c4447; */
     padding: 12px;
     border-radius: 12px;
+    width: fit-content;
 }
+
+.projHead-animate{
+    background-color: #f4e9d7;
+    width: 80%;
+    padding: 8px;
+    border-radius: 12px;
+    margin-left: -3px;
+    margin-top: -40px;
+    opacity: 1;
+    animation: load-down 1000ms;
+}
+
+.project-animate{
+    display: flex;
+    margin: 20px 18px 0px 18px;
+    align-items: center;
+    background-color: #928489;
+    padding: 12px;
+    border-radius: 12px;
+    animation: load-left 1000ms;
+    opacity: 1;
+    width: fit-content;
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(100%)
+    }
+    100% {
+        transform: translateY(0%)
+    }
+}
+
 
 .projectImg{
     width: 100%;
@@ -27,20 +59,36 @@
 
 .project-type{
     height: fit-content;
-    margin-top: -2px;
+    margin-top: 10px;
     font-style: italic;
     font-size: 16px;
 }
 
-.project-description{
-    padding: 15px;
+.project-type-animate {
+    height: fit-content;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 16px;
+    animation: load-right 1000ms;
 }
-/* 
-.snapshot {
-    width: 70% !important;
-    margin-left: 20px !important;
-    margin-right: 20px !important;
-} */
+
+.proj-title-animate{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    color: #f6efe5;
+    letter-spacing: .2em;
+    animation: load-left 1000ms;
+}
+
+.project-description{
+    padding: 0px 15px 0px 15px;
+}
+
+.proj-desc-animate{
+    padding: 0px 15px 0px 15px;
+    animation: load-right 1000ms;
+    opacity: 1;
+}
 
 .project-title{
     background-color: #f4e9d7;
@@ -49,9 +97,25 @@
     border-radius: 12px;
     margin-left: -3px;
     margin-top: -40px;
+    opacity: 0;
 }
 
 .projects{
     margin-top: 150px;
     border: 2px solid black;
 }
+
+button{
+    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.projectImg-title a {
+    width: 100%;
+}
+
+/* .secondhand-button {
+    margin-top: 50px;
+} */

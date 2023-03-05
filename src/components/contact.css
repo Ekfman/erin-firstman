@@ -7,7 +7,6 @@
     padding: 80px 0px 80px 0px;
     width: 80%;
     color: #f4e9d7;
-    /* border: 2px solid black; */
     font-size: 16px;
 
 }
@@ -17,36 +16,58 @@
    color: #f4e9d7;
 }
 
+.hello-animate{
+    margin-top: -100px;
+   color: #f4e9d7;
+   animation: shake 1000ms;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(15deg);
+    }
+    15%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    45%{
+        transform: rotate(-15deg);
+    }
+    60%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
 .contact-container{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 150px;
     margin-bottom: 100px;
-    /* border: 2px solid black; */
 
 }
 .name-email-div{
     display: flex;
     width: 100%;
-    /* flex-direction: row; */
-    /* justify-content: space-between; */
-    /* border: 2px solid black; */
 }
 .contact{
     display: flex;
     flex-direction: column;
     width: 50%;
     justify-content: center
-    /* border: 2px solid black; */
 }
+
 
 .hello-div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 60px;
-    /* border: 2px solid black; */
     margin-top: 20px;
     height: fit-content;
 }
@@ -55,8 +76,8 @@ button{
     margin-top: 20px;
     border: none;
     border-radius: 12px;
-    padding: 12px 0px 12px 0px;
-    width: 50%;
+    padding: 12px 30px 12px 30px;
+    width: 100%;
     background-color: #4c4447;
     font-family: 'Barlow Condensed', sans-serif !important;
     font-weight: bold;
@@ -73,7 +94,6 @@ button:hover{
 .icons{
     display: flex;
     flex-direction: row;
-    /* border: 2px solid black; */
     width: 400px;
     margin-top: -60px;
     margin-left: 5px;
@@ -81,7 +101,6 @@ button:hover{
 
 .form-label{
     margin-top: 12px;
-    /* margin-right: 20px; */
 }
 
 input{
@@ -91,9 +110,6 @@ input{
     background-color: #f4e9d7;
 }
 
-/* .contact-message{
-    width: 100%;
-} */
 
 label{
     font-family: 'Barlow Condensed', sans-serif;
@@ -103,7 +119,6 @@ label{
 
 .message-div{
     width: 100%;
-    /* border: 2px solid black; */
 }
 
 .contact-message{
@@ -131,4 +146,29 @@ textarea{
 .icon:hover{
     width: fit-content;
     width: 60%;
+}
+
+.say-animate {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    color: #4c4447;
+    animation: slam 1000ms;
+}
+
+@keyframes slam {
+    0% {
+        transform: scale(0);
+    }
+    75% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+.send{
+    width: 50%;
+    padding-left: 0;
+    padding-right: 0;
 }
