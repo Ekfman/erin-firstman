@@ -92,7 +92,7 @@ const Projects = () => {
               users can post, edit and delete listings, and also send and
               receieve inquiries.
             </p>
-            <a href="https://funny-cheesecake-f25f49.netlify.app/">
+            <a href="https://the-auction-attic.netlify.app/">
               <button className="secondhand-button">Check it out</button>
             </a>
           </div>
