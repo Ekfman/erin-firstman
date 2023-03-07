@@ -37,14 +37,14 @@ const Contact = () => {
           <h2 className={contactHeader && "say-animate"}>SAY</h2>
           <h2 className={contactHeader ? "hello-animate" : "hello"}>HELLO!</h2>
           <div className="icons">
-            <a href="https://www.linkedin.com/in/erin-firstman/">
+            <a target="_blank" href="https://www.linkedin.com/in/erin-firstman/">
               <img
                 className="icon"
                 src={require("./assets/icons/linkedInIcon.png")}
                 alt="linkedInLogo"
               ></img>
             </a>
-            <a href="https://github.com/Ekfman">
+            <a target="_blank" href="https://github.com/Ekfman">
               <img
                 className="icon"
                 src={require("./assets/icons/githubIcon.png")}

@@ -6,18 +6,18 @@ import { useInView } from "react-intersection-observer";
 const About = () => {
   const { ref: aboutContainer, inView: bioVisible } = useInView();
 
-  const [num, setNum] = useState(1);
+  // const [num, setNum] = useState(1);
 
-  useEffect(() => {
-    setInterval(() => {
-      setNum((prev) => (prev < 7 ? prev + 1 : prev));
-    }, 300);
-  }, []);
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     setNum((prev) => (prev < 7 ? prev + 1 : prev));
+  //   }, 300);
+  // }, []);
 
   return (
     <div className="parentContainer" id="about">
       <div className="imgBio" id="scroll-item" ref={aboutContainer}>
-        <img className={bioVisible && "av-animate"} src={require(`./assets/avatarAnimation/${num}.png`)}></img>
+        <img className={bioVisible && "av-animate"} src={require(`./assets/avatarAnimation/6.png`)}></img>
         <div className="bio-container" >
           <div className={bioVisible ? "bio-box-animate" : "bio-box"}>
             <h2 className="snapshot">A SNAPSHOT OF ME.</h2>

@@ -36,7 +36,7 @@ const Projects = () => {
               time or energy. When nostalgia or curiousity hits, users can
               easily find and view their past entries.
             </p>
-            <a href="https://confidant.herokuapp.com/">
+            <a target="_blank" href="https://confidant.herokuapp.com/">
               <button>Check it out</button>
             </a>
           </div>
@@ -63,6 +63,7 @@ const Projects = () => {
               history, and admins can access user information.
             </p>
             <a
+            target="_blank"
               href={
                 "https://www.youtube.com/watch?v=GfMReVr7MLk&list=PLH8yf4pGZM236BFvuXyBrz1M5CGdc8zRe&index=5"
               }
@@ -92,7 +93,7 @@ const Projects = () => {
               users can post, edit and delete listings, and also send and
               receieve inquiries.
             </p>
-            <a href="https://the-auction-attic.netlify.app/">
+            <a target="_blank" href="https://the-auction-attic.netlify.app/">
               <button className="secondhand-button">Check it out</button>
             </a>
           </div>

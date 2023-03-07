@@ -21,7 +21,7 @@ const Nabvar = () => {
         </li>
         </div>
         <div>
-          <a href="https://drive.google.com/drive/u/0/search?q=Firstman_Resume"><div className="resume">RESUME</div></a>
+          <a target="_blank" href="https://drive.google.com/drive/u/0/search?q=Firstman_Resume"><div className="resume">RESUME</div></a>
         </div>
       </nav>
     </div>
