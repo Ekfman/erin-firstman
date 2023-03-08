@@ -5,10 +5,10 @@ img{
 
 .parentContainer {
     display: flex;
-    flex-direction: row;
-    padding: 0px 10% 0px 10%;
+    flex-direction: column;
+    /* padding: 0px 10% 0px 10%; */
     /* border: 2px solid red; */
-    margin-top: 150px;
+    /* margin-top: 150px; */
     margin-bottom: 100px;
 }
 
@@ -16,7 +16,92 @@ img{
 .imgBio {
     display: flex;
     flex-direction: row;
+    margin-top: 10%;
+    justify-content: center;
+    /* max-width: 80%; */
+    /* background-color: #f4e9d7; */
     /* border: 2px solid red; */
+}
+
+.puzzle{
+    display: flex;
+    width: 80%;
+    /* flex-wrap: wrap; */
+    /* border: 2px solid black; */
+    margin-left: 5%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.puzzle img:hover {
+    filter: drop-shadow(0px 8px 8px rgb(41, 41, 41));
+    cursor: pointer;
+
+}
+
+.bio{
+width: 80%;
+}
+
+
+.puzzle-top{
+   display: flex;
+   flex-direction: row;
+}
+
+.puzzle-me {
+    /* position: absolute; */
+}
+
+.puzzle-me-animation {
+    /* animation: slide-up 1000ms; */
+    transform: scale(110%);
+    /* transform: */
+}
+
+@keyframes slide-up {
+    0%{
+        transform: translateY(0%)
+    }
+
+    100% {
+        transform: translateY(-80%);
+    }
+}
+
+.dev{
+    display: flex;
+    width: 50%;
+    border: black 2px solid;
+    position: absolute;
+}
+
+.dev div h3 {
+    display: flex;
+    flex-direction: row;
+    margin: 30%;
+}
+
+.under-text{
+    /* position: absolute;
+    z-index: 9; */
+    /* margin: 30px; */
+}
+
+.puzzle-bottom{
+    display:flex;
+    flex-direction: row;
+    margin-top: -10%;
+}
+
+.puzzle-backend {
+    margin-left: -9%;
+    /* margin-top: -60px */
+}
+
+.puzzle-tools {
+    /* margin-top: -60px; */
 }
 
 .hi{
@@ -31,17 +116,8 @@ img{
 
 .content-animate{
     margin-top: 5px !important;
-    animation: scroll-up-lag 1500ms;
+    animation: scroll-up 1500ms;
     opacity: 100%
-}
-
-@keyframes scroll-up-lag {
-    0% {
-        transform: translateY(50%)
-    }
-    100% {
-        transform: translateY(0%)
-    }
 }
 
 .banner{
@@ -58,8 +134,56 @@ img{
     /* display: inline-block; */
 }
 
+.bio {
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.technologies img{
+    width: 25%;
+}
+
 .av-animate {
     animation: scroll-up 1000ms;
+}
+
+.av-animate:hover{
+    cursor: pointer !important;
+}
+
+.scroll-text{
+    width: 100%;
+    background-color: #928489;
+    text-align: right;
+ 
+}
+
+@keyframes my-animation {
+    from {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+    to {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+  }
+
+.scroll-text h2 {
+    color: #4c4447 !important;
+    font-size: 18px;
+       -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 12s linear infinite;
+    
 }
 
 .bio-box-animate {
@@ -74,7 +198,7 @@ img{
 
 @keyframes scroll-up {
     0% {
-        transform: translateY(50%)
+        transform: translateY(20%)
     }
     100% {
         transform: translateY(0%)
