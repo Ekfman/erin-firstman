@@ -47,8 +47,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
-    padding-bottom: 100px;
+    margin-top: 3.5em;
+    padding-bottom: 3.5em;
     background-color: #706267;
 
 }
@@ -108,7 +108,7 @@ input{
     height: 30px;
     width: 100%;
     border: none;
-    background-color: #f4e9d7;
+    background-color: #f6efe5;
 }
 
 
@@ -133,7 +133,7 @@ textarea:focus,
 }
 
 textarea{
-    background-color: #f4e9d7;
+    background-color: #f6efe5;
     border: none;
     font-family: 'Barlow Condensed', sans-serif;
 }

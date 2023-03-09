@@ -41,20 +41,21 @@ const About = () => {
   const puzzleBackOffHover = () => {
     setBackHover((prev) => !prev);
   };
+  console.log(frontHover);
   return (
     <div className="parentContainer" id="about">
-      <div>
-        <h2>Skills</h2>
-        <h3>
-          "Coding is like a puzzle where pieces are constantly falling on the
-          floor." -Confucious{" "}
-        </h3>
-      </div>
+      <center>
+        <h3 className="quote">
+          "Coding is like a puzzle. Pieces are constantly falling on the
+          floor." -Steve Jobs (rumored)
+      </h3>
+      </center>
       <div>
         <div className="imgBio" id="scroll-item" ref={aboutContainer}>
           <div className="puzzle">
             <div className="puzzle-top">
               <img
+              className={frontHover ? "puzzle-me-animation" : "puzzle-frontend"}
                 src={require("./assets/puzzle/puzzle_frontend.png")}
                 onMouseEnter={puzzleFrontHover}
                 onMouseLeave={puzzleFrontOffHover}
@@ -68,13 +69,13 @@ const About = () => {
             </div>
             <div className="puzzle-bottom">
               <img
-                className="puzzle-tools"
+                className={toolsHover ? "puzzle-me-animation" : "puzzle-tools"}
                 src={require("./assets/puzzle/puzzle_tools.png")}
                 onMouseEnter={puzzleToolsHover}
                 onMouseLeave={puzzleToolsOffHover}
               ></img>
               <img
-                className="puzzle-backend"
+                className={backHover ? "puzzle-backend-animation" : "puzzle-backend"}
                 src={require("./assets/puzzle/puzzle_backend.png")}
                 onMouseEnter={puzzleBackHover}
                 onMouseLeave={puzzleBackOffHover}
@@ -85,11 +86,14 @@ const About = () => {
             {!meHover && !frontHover && !toolsHover && !backHover && <h3>Hover over a puzzle piece</h3>}
             {meHover && (
               <div className="under-text">
-                <h3>Why am I the missing piece?</h3>
-                <p>
-                  I am addicted to creation and solving problems. I am addicted
-                  to creation and solving problems.
-                </p>
+                <h3>Who am I?</h3>
+                <p> I am addicted to creation and solving problems.</p>
+                <h4>Achiever</h4>
+                <p>Constantly setting and achieving short term and long term goals.</p>
+                <h4>Reliable</h4>
+                <p>I put the teams needs ahead of my own personal agenda.</p>
+                <h4>Leader</h4>
+                <p>Inspire others through example, and take on extra work where others can't</p>
               </div>
             )}
             {frontHover && (
@@ -137,6 +141,13 @@ const About = () => {
                       src={require("./assets/tech_pngs/javascript.png")}
                     ></img>
                     <p>Git</p>
+                  </div>
+                  <div>
+                    <img
+                      alt="JavaScript Icon"
+                      src={require("./assets/tech_pngs/javascript.png")}
+                    ></img>
+                    <p>Thunder Client</p>
                   </div>
                   <div>
                     <img

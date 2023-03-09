@@ -16,7 +16,7 @@ img{
 .imgBio {
     display: flex;
     flex-direction: row;
-    margin-top: 10%;
+    margin-top: 5%;
     justify-content: center;
     /* max-width: 80%; */
     /* background-color: #f4e9d7; */
@@ -52,6 +52,18 @@ width: 80%;
 
 .puzzle-me {
     /* position: absolute; */
+}
+
+.quote{
+    background-color: #f6efe5;
+    height: 3em;
+    margin-top: -.2em;
+    margin-bottom: -.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4c4447;
+    font-size: 1.2em;
 }
 
 .puzzle-me-animation {
@@ -100,8 +112,17 @@ width: 80%;
     /* margin-top: -60px */
 }
 
+.puzzle-backend-animation {
+    margin-left: -9%;
+    transform: scale(110%);
+}
+
 .puzzle-tools {
     /* margin-top: -60px; */
+}
+
+.puzzle-frontend{
+    scale: 100%;
 }
 
 .hi{
