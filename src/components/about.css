@@ -162,8 +162,35 @@ width: 80%;
     align-items: center;
 }
 
+
+.technologies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+}
+
+.bio-description-wrapper{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.tools{
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.tools p {
+    margin-top: .5em;
+    flex-wrap: wrap;
+}
+
 .technologies img{
-    width: 25%;
+    width: 50px;
 }
 
 .av-animate {

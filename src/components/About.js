@@ -97,34 +97,41 @@ const About = () => {
               </div>
             )}
             {frontHover && (
-              <div>
+              <div className="bio-description-wrapper">
                 <h3>Front-end Skills</h3>
                 <div className="technologies">
-                  <div>
+                  <div className="tools">
                     <img
                       alt="JavaScript Icon"
                       src={require("./assets/tech_pngs/javascript.png")}
                     ></img>
                     <p>JavaScript</p>
                   </div>
-                  <div>
+                  <div className="tools">
                     <img
                       alt="React Icon"
                       src={require("./assets/tech_pngs/react.png")}
                     ></img>
                     <p>React</p>
                   </div>
-                  <div>
+                  <div className="tools">
                     <img
-                      alt="React Icon"
-                      src={require("./assets/tech_pngs/react.png")}
+                      alt="Redux Icon"
+                      src={require("./assets/tech_pngs/redux.png")}
+                    ></img>
+                    <p>Redux</p>
+                  </div>
+                  <div className="tools">
+                    <img
+                      alt="HTML5 Icon"
+                      src={require("./assets/tech_pngs/html.png")}
                     ></img>
                     <p>HTML5</p>
                   </div>
-                  <div>
+                  <div className="tools">
                     <img
-                      alt="React Icon"
-                      src={require("./assets/tech_pngs/react.png")}
+                      alt="CSS3 Icon"
+                      src={require("./assets/tech_pngs/css.png")}
                     ></img>
                     <p>CSS3</p>
                   </div>
@@ -132,48 +139,48 @@ const About = () => {
               </div>
             )}
             {toolsHover && (
-              <div>
+              <div className="bio-description-wrapper">
                 <h3>Tools Experience</h3>
                 <div className="technologies">
-                  <div>
+                  <div className="tools">
                     <img
-                      alt="JavaScript Icon"
-                      src={require("./assets/tech_pngs/javascript.png")}
+                      alt="Git Icon"
+                      src={require("./assets/tech_pngs/git.png")}
                     ></img>
                     <p>Git</p>
                   </div>
-                  <div>
+                  <div className="tools">
                     <img
-                      alt="JavaScript Icon"
-                      src={require("./assets/tech_pngs/javascript.png")}
+                      alt="Thunder Client Icon"
+                      src={require("./assets/tech_pngs/thunderclient.webp")}
                     ></img>
                     <p>Thunder Client</p>
                   </div>
-                  <div>
+                  <div className="tools">
                     <img
-                      alt="JavaScript Icon"
-                      src={require("./assets/tech_pngs/javascript.png")}
+                      alt="Netifly Icon"
+                      src={require("./assets/tech_pngs/netifly.webp")}
                     ></img>
                     <p>Netifly</p>
                   </div>
-                  <div>
+                  <div className="tools">
                     <img
-                      alt="JavaScript Icon"
-                      src={require("./assets/tech_pngs/javascript.png")}
+                      alt="Heroku Icon"
+                      src={require("./assets/tech_pngs/heroku.png")}
                     ></img>
                     <p>Heroku</p>
                   </div>
-                  <div>
+                  <div className="tools">
                     <img
-                      alt="JavaScript Icon"
-                      src={require("./assets/tech_pngs/javascript.png")}
+                      alt="Webpack Icon"
+                      src={require("./assets/tech_pngs/webpack.png")}
                     ></img>
                     <p>Webpack</p>
                   </div>
-                  <div>
+                  <div className="tools">
                     <img
-                      alt="JavaScript Icon"
-                      src={require("./assets/tech_pngs/javascript.png")}
+                      alt="Postico Icon"
+                      src={require("./assets/tech_pngs/postico.png")}
                     ></img>
                     <p>Postico</p>
                   </div>
@@ -181,41 +188,34 @@ const About = () => {
               </div>
             )}
             {backHover && (
-              <div>
+              <div className="bio-description-wrapper">
                 <h3>Back-end Skills</h3>
                 <div className="technologies">
-                  <div>
+                  <div className="tools">
                     <img
-                      alt="JavaScript Icon"
-                      src={require("./assets/tech_pngs/javascript.png")}
+                      alt="Node Icon"
+                      src={require("./assets/tech_pngs/node.png")}
                     ></img>
                     <p>Node</p>
                   </div>
-                  <div>
+                  <div className="tools">
                     <img
-                      alt="React Icon"
-                      src={require("./assets/tech_pngs/react.png")}
+                      alt="Express Icon"
+                      src={require("./assets/tech_pngs/express.png")}
                     ></img>
                     <p>Express</p>
                   </div>
-                  <div>
+                  <div className="tools">
                     <img
-                      alt="React Icon"
-                      src={require("./assets/tech_pngs/react.png")}
+                      alt="PSQL Icon"
+                      src={require("./assets/tech_pngs/psql.png")}
                     ></img>
-                    <p>PSQL</p>
+                    <p>PostgreSQL</p>
                   </div>
-                  <div>
+                  <div className="tools">
                     <img
-                      alt="React Icon"
-                      src={require("./assets/tech_pngs/react.png")}
-                    ></img>
-                    <p>CSS3</p>
-                  </div>
-                  <div>
-                    <img
-                      alt="React Icon"
-                      src={require("./assets/tech_pngs/react.png")}
+                      alt="API Icon"
+                      src={require("./assets/tech_pngs/apiIcon.png")}
                     ></img>
                     <p>RESTful API</p>
                   </div>
