@@ -5,6 +5,8 @@ import { useInView } from "react-intersection-observer";
 
 const About = () => {
   const { ref: aboutContainer, inView: bioVisible } = useInView();
+  const { ref: bioContainer, inView: hoverOver } = useInView();
+  const { ref: techContainer, inView: iconsVisible } = useInView();
   const [meHover, setMeHover] = useState(false);
   const [frontHover, setFrontHover] = useState(false);
   const [toolsHover, setToolsHover] = useState(false);
@@ -46,13 +48,13 @@ const About = () => {
     <div className="parentContainer" id="about">
       <center>
         <h3 className="quote">
-          "Coding is like a puzzle. Pieces are constantly falling on the
-          floor." -Steve Jobs (rumored)
+          "Coding is the greatest jig-saw puzzle to solve." - Mark Zuckerberg (rumored)
       </h3>
       </center>
       <div>
         <div className="imgBio" id="scroll-item" ref={aboutContainer}>
-          <div className="puzzle">
+          {/* <div className="puzzle"> */}
+          <div className={bioVisible ? "puzzle-animation" :"puzzle"}>
             <div className="puzzle-top">
               <img
               className={frontHover ? "puzzle-me-animation" : "puzzle-frontend"}
@@ -82,22 +84,23 @@ const About = () => {
               ></img>
             </div>
           </div>
-          <div className="bio">
-            {!meHover && !frontHover && !toolsHover && !backHover && <h3>Hover over a puzzle piece</h3>}
+          <div ref={bioContainer} className="bio">
+            {!meHover && !frontHover && !toolsHover && !backHover && <h3 className={ hoverOver && "hover-animation"}>Hover over a puzzle piece</h3>}
             {meHover && (
-              <div className="under-text">
+              <div className={hoverOver && "under-text-animation"}>
                 <h3>Who am I?</h3>
-                <p> I am addicted to creation and solving problems.</p>
+                <p className="blurb"> I am addicted to creation and solving problems</p>
                 <h4>Achiever</h4>
-                <p>Constantly setting and achieving short term and long term goals.</p>
+                <p>Constantly setting and achieving short- and long-term goals</p>
                 <h4>Reliable</h4>
-                <p>I put the teams needs ahead of my own personal agenda.</p>
+                <p>Put the teams needs ahead of my own personal agenda</p>
                 <h4>Leader</h4>
-                <p>Inspire others through example, and take on extra work where others can't</p>
+                <p>Inspire people through example, and take on extra work</p>
               </div>
             )}
+            <div ref={techContainer}>
             {frontHover && (
-              <div className="bio-description-wrapper">
+              <div className={iconsVisible ? "bio-description-wrapper-animation" : "bio-description-wrapper"}>
                 <h3>Front-end Skills</h3>
                 <div className="technologies">
                   <div className="tools">
@@ -139,8 +142,8 @@ const About = () => {
               </div>
             )}
             {toolsHover && (
-              <div className="bio-description-wrapper">
-                <h3>Tools Experience</h3>
+              <div className={iconsVisible ? "bio-description-wrapper-animation" : "bio-description-wrapper"}>
+                <h3>Tools</h3>
                 <div className="technologies">
                   <div className="tools">
                     <img
@@ -188,7 +191,7 @@ const About = () => {
               </div>
             )}
             {backHover && (
-              <div className="bio-description-wrapper">
+              <div className={iconsVisible ? "bio-description-wrapper-animation" : "bio-description-wrapper"}>
                 <h3>Back-end Skills</h3>
                 <div className="technologies">
                   <div className="tools">
@@ -222,6 +225,7 @@ const About = () => {
                 </div>
               </div>
             )}
+            </div>
           </div>
         </div>
       </div>

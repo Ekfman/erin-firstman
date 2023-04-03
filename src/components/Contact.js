@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 import { useInView } from "react-intersection-observer";
+import { Col, Row, Container } from "react-bootstrap";
 
 
 const Contact = () => {
@@ -31,12 +32,15 @@ const Contact = () => {
       );
   };
   return (
-    <div className="contact-container" ref={contactContainer}>
-      <div id="contact" className="form">
-        <div className="hello-div">
+    <Container className="contact-container" ref={contactContainer} fluid>
+      <Row id="contact" className="form">
+        <Col className="hello-div">
+          <Row>
           <h2 className={contactHeader && "say-animate"}>SAY</h2>
           <h2 className={contactHeader ? "hello-animate" : "hello"}>HELLO!</h2>
-          <div className="icons">
+          </Row>
+          <Row>
+            <Col>
             <a target="_blank" href="https://www.linkedin.com/in/erin-firstman/">
               <img
                 className="icon"
@@ -44,6 +48,8 @@ const Contact = () => {
                 alt="linkedInLogo"
               ></img>
             </a>
+            </Col>
+            <Col>
             <a target="_blank" href="https://github.com/Ekfman">
               <img
                 className="icon"
@@ -51,38 +57,41 @@ const Contact = () => {
                 alt="githublogo"
               ></img>
             </a>
-          </div>
-        </div>
-        <form className="contact" ref={form}>
+            </Col>
+          </Row>
+        </Col>
+        <Col style={{"margin-top": "30px"}}>
+          <form ref={form}>
           {emailSent ? (
-            <h2>Thank you for your email!</h2>
+            <h2 style={{"display": "flex", "align-items": "center", "justify-content": "center"}}>Thank you for your email!</h2>
           ) : (
             <>
-              <div className="name-email-div">
-                <div className="form-label">
+              <Row>
+                <Col>
                   <label>NAME</label>
                   <input type="text" name="user_name"></input>
-                </div>
-                <div className="form-label">
+                </Col>
+                <Col>
                   <label>EMAIL</label>
                   <input type="email" name="user"></input>
-                </div>
-              </div>
+                </Col>
+              </Row>
               <br></br>
-              <div className="message-div">
+              <Row>
                 <label>MESSAGE</label>
-                <textarea className="contact-message" name="message"></textarea>
-              </div>
-              <center>
-                <button className="send" type="submit" value="Send" onClick={sendEmail}>
+                <textarea style={{"height": "10em", "width": "50em"}} name="message"></textarea>
+              </Row>
+              <Row>
+                <center><button className="send" type="submit" value="Send" onClick={sendEmail}>
                   SEND
-                </button>
-              </center>
+                </button></center>
+              </Row>
             </>
           )}
-        </form>
-      </div>
-    </div>
+          </form>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

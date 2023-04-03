@@ -1,14 +1,16 @@
-import "./home.css"
+import "./home.css";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const Home = () => {
-  return(
-    <div id="home" className="hero">
-      <div className="banner-text">
+  return (
+    <div id="home" fluid className="hero">
+      {/* <Row  className="test" style={{"text-align": "center", "alignItems": "center", "justifyContent": "center"}}> */}
       <h1>ERIN FIRSTMAN</h1>
       <h2 className="hero-sub">FULL-STACK JAVASCRIPT WEB DEVELOPER</h2>
-      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Home;

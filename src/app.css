@@ -4,40 +4,40 @@ html, body {
 }
 
 body {
-    /* padding: 0px 10% 0px 10%; */
     height: 100vh;
-    /* background-color: #978b95; */
     background-color: #706267;
     font-size: large;
-}
-
-div {
-    display: flex;
-    flex-direction: column;
 }
 
 h2 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 800;
     color: #4c4447;
+    font-size: 2em;
 }
 
 h1 {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 160px;
+    font-size: 18vh;
 }
+
+@media screen and (max-width: 600px) {
+    h1 {
+      font-size: 8vh;
+    }
+  }
 
 h3 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 600;
     color: #f6efe5;
     letter-spacing: .2em;
-    font-size: 1.8em;
+    font-size: 3vh;
 }
 
 p {
     font-family:'Barlow Condensed', sans-serif;
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1.5em;
     color: #dad5cd;
     margin-top: -20px;
@@ -55,4 +55,3 @@ p {
     animation-iteration-count: infinite;
     animation-direction: alternate;
   }
-

@@ -4,7 +4,9 @@
     background-image: url("../components/assets/hero2.jpg");
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .banner-text{
@@ -16,14 +18,34 @@
     filter: drop-shadow(0px 8px 8px rgb(41, 41, 41));
 }
 
-.hero-sub {
-    margin-top: -60px;
-    color: #f4e9d7;;
-    animation: load-right 500ms
+.test{
+    border: 10px solid black;
 }
 
+.hero-sub {
+    color: #f4e9d7;
+    animation: load-right 500ms;
+    filter: drop-shadow(0px 8px 8px rgb(41, 41, 41));
+    /* margin-top: -150px; */
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .hero-sub {
+      font-size: 3vh;
+    }
+  }
+
 h1{
-    animation: load-left 500ms
+    display: flex;
+    animation: load-left 500ms;
+    align-items: center;
+    justify-content: center;
+    color: #f4e9d7;
+    font-weight: bold;
+    filter: drop-shadow(0px 8px 8px rgb(41, 41, 41));
+    /* margin-bottom: -300px; */
 }
 
 @keyframes load-left {

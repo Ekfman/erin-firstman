@@ -13,9 +13,13 @@
   "license": "ISC",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.2.3",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.4.3",
+    "react-on-screen": "^2.1.1",
     "react-router-dom": "^6.8.1",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.9",

@@ -25,19 +25,32 @@ img{
 
 .puzzle{
     display: flex;
-    width: 80%;
-    /* flex-wrap: wrap; */
-    /* border: 2px solid black; */
+    max-width: 50%;
     margin-left: 5%;
     align-items: center;
     justify-content: center;
     position: relative;
 }
 
+.puzzle-animation {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 5%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: scroll-up 1.5s;
+}
+
 .puzzle img:hover {
     filter: drop-shadow(0px 8px 8px rgb(41, 41, 41));
     cursor: pointer;
 
+}
+
+.hover-animation {
+    animation: shake 1s
 }
 
 .bio{
@@ -57,13 +70,16 @@ width: 80%;
 .quote{
     background-color: #f6efe5;
     height: 3em;
-    margin-top: -.2em;
-    margin-bottom: -.2em;
+    /* margin-top: -.2em;
+    margin-bottom: -.2em; */
     display: flex;
     justify-content: center;
     align-items: center;
     color: #4c4447;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
+    height: fit-content;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .puzzle-me-animation {
@@ -95,10 +111,29 @@ width: 80%;
     margin: 30%;
 }
 
-.under-text{
-    /* position: absolute;
-    z-index: 9; */
-    /* margin: 30px; */
+.under-text-animation{
+    animation: scroll-up 1s;
+}
+
+.under-text-animation h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color:#928489; */
+}
+
+.blurb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.under-text-animation h4{
+    font-weight: bold;
+    font-family: 'Barlow Condensed', sans-serif;
+    /* color:#928489; */
+    color: #f4e9d7;
+    font-size: 1.2em;
 }
 
 .puzzle-bottom{
@@ -171,9 +206,14 @@ width: 80%;
 }
 
 .bio-description-wrapper{
-    /* display: flex; */
     justify-content: center;
     align-items: center;
+}
+
+.bio-description-wrapper-animation{
+    justify-content: center;
+    align-items: center;
+    animation: scroll-up 1s;
 }
 
 .tools{

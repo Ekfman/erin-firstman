@@ -4,23 +4,31 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 80px 0px 80px 0px;
+    padding: 180px 0px 180px 0px;
     width: 80%;
     color: #f4e9d7;
     font-size: 16px;
-
+    align-items: center;
 }
 
 .hello{
-   margin-top: -100px;
    color: #f4e9d7;
 }
 
 .hello-animate{
-    margin-top: -100px;
    color: #f4e9d7;
+   margin-top: -50px;
    animation: shake 1000ms;
 }
+
+@media screen and (max-width: 600px) {
+    h2 {
+      font-size: 8vh;
+    }
+    .hello-animate{
+        margin-top: -20px;
+    }
+  }
 
 @keyframes shake {
     0% {
@@ -47,8 +55,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3.5em;
-    padding-bottom: 3.5em;
+    padding-top: 10em;
+    padding-bottom: 10em;
     background-color: #706267;
 
 }
@@ -92,14 +100,6 @@ button:hover{
     cursor: pointer;
 }
 
-.icons{
-    display: flex;
-    flex-direction: row;
-    width: 400px;
-    margin-top: -60px;
-    margin-left: 5px;
-}
-
 .form-label{
     margin-top: 12px;
 }
@@ -109,6 +109,8 @@ input{
     width: 100%;
     border: none;
     background-color: #f6efe5;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 
@@ -116,6 +118,7 @@ label{
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: bold;
     line-height: 1.5em;
+    font-size: 20px;
 }
 
 .message-div{
@@ -136,17 +139,20 @@ textarea{
     background-color: #f6efe5;
     border: none;
     font-family: 'Barlow Condensed', sans-serif;
+    height: 100px;
+    margin-left: 11px;
+    width: 90%;
+    border-radius: 9px;
+    padding: 5px;
 }
 
-.icons a {
-    width: fit-content;
+.icon {
     width: 25%;
-    margin-right: -20px;
 }
 
 .icon:hover{
     width: fit-content;
-    width: 60%;
+    width: 35%;
 }
 
 .say-animate {
