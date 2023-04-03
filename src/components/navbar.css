@@ -10,6 +10,16 @@
 
 }
 
+.navbar-nav {
+    align-items: end;
+}
+
+@media screen and (max-width: 600px) {
+    Nav.Link {
+     font-size: 3vh;
+    }
+  }
+
 @keyframes load-down {
     0% {
         transform: translateY(-100%)
@@ -83,6 +93,6 @@ a{
     text-decoration: none;
 }
 
-a.active {
+/* a.active {
     text-decoration: none;
-}
+} */

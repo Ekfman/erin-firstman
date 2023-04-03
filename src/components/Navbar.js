@@ -1,29 +1,22 @@
-import { Link } from "react-scroll";
 import "./navbar.css";
+import { Navbar, Nav } from "react-bootstrap";
 
 const Nabvar = () => {
   return (
     <div className="navbarHeader" >
-      <nav className="navbar">
+      <Navbar collapseOnSelect expand="lg">
         <div className="name">ERIN FIRSTMAN</div>
-        <div className="list">
-        <li className="nav-link">
-          <Link to="home" spy={true} smooth={true} offset={-50} duration={500}>// HOME</Link>
-        </li>
-        <li className="nav-link">
-          <Link to="about" spy={true} smooth={true} offset={-65} duration={500}>// ABOUT ME</Link>
-        </li>
-        <li className="nav-link">
-          <Link to="projects" spy={true} smooth={true} offset={0} duration={500}>// PROJECTS</Link>
-        </li>
-        <li className="nav-link">
-          <Link to="contact" spy={true} smooth={true} offset={-100} duration={500}>// SAY HELLO</Link>
-        </li>
-        </div>
-        <div>
-          <a target="_blank" href="https://drive.google.com/drive/u/0/search?q=Firstman_Resume"><div className="resume">RESUME</div></a>
-        </div>
-      </nav>
+        <Navbar.Toggle style={{"width": "60px"}}></Navbar.Toggle>
+        <Navbar.Collapse style={{"justify-content": "center"}}>
+        <Nav>
+          <Nav.Link href="#home">// HOME</Nav.Link>
+          <Nav.Link href="#about" >// ABOUT ME</Nav.Link>
+          <Nav.Link href="#projects">// PROJECTS</Nav.Link>
+          <Nav.Link href="#contact">// SAY HELLO</Nav.Link>
+          <Nav.Link target="_blank" href="https://drive.google.com/drive/u/0/search?q=Firstman_Resume"><div className="resume">RESUME</div></Nav.Link>
+        </Nav>
+        </Navbar.Collapse>
+        </Navbar>
     </div>
   );
 };
