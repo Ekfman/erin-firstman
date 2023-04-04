@@ -24,7 +24,7 @@
     navbar-nav {
         display: flex !important;
         flex-direction: column !important;
-        align-items: end !important;
+        align-items: flex-end !important;
     }
     nav-links {
         display: flex !important;
@@ -52,7 +52,7 @@
 .resume-div {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .resume:hover{
