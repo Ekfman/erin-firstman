@@ -1,27 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.39f86afa.css",
-    "main.js": "/static/js/main.b63bbfe4.js",
+    "main.css": "/static/css/main.3d540053.css",
+    "main.js": "/static/js/main.ead91142.js",
     "static/media/calendarView.png": "/static/media/calendarView.e809b9c5bcaf28468fbb.png",
     "static/media/homescreen.png": "/static/media/homescreen.2f97970d33681b9e6959.png",
     "static/media/home.png": "/static/media/home.7862aea08e647146fe05.png",
-    "static/media/7.png": "/static/media/7.6b353f776ceac2e82de3.png",
-    "static/media/6.png": "/static/media/6.3c2aedac7801fe12dbb2.png",
-    "static/media/5.png": "/static/media/5.9d4411a7943427f5254c.png",
-    "static/media/4.png": "/static/media/4.e08b197e19a85d1d6d3e.png",
     "static/media/hero2.jpg": "/static/media/hero2.416072ce45c22e18ef24.jpg",
-    "static/media/2.png": "/static/media/2.07625182baa4d87b0b86.png",
-    "static/media/3.png": "/static/media/3.05ca840377df97591fcd.png",
-    "static/media/1.png": "/static/media/1.4b9032e035cc08099b91.png",
+    "static/media/puzzle_me.png": "/static/media/puzzle_me.c86c9ab27d793856e8a7.png",
+    "static/media/puzzle_backend.png": "/static/media/puzzle_backend.169edc5082f8d67875c6.png",
+    "static/media/puzzle_tools.png": "/static/media/puzzle_tools.a42167b5183e51c329c7.png",
+    "static/media/puzzle_frontend.png": "/static/media/puzzle_frontend.6b8ca9e9634f7924e962.png",
+    "static/media/express.png": "/static/media/express.a6b01a8aa853642dc0b9.png",
+    "static/media/psql.png": "/static/media/psql.c8891cc79d21bc263a06.png",
+    "static/media/webpack.png": "/static/media/webpack.47692505d122dbcae490.png",
+    "static/media/node.png": "/static/media/node.732af66b37eea31e9f9b.png",
+    "static/media/react.png": "/static/media/react.11b59729d3fa01935a5e.png",
+    "static/media/css.png": "/static/media/css.3a4e9608e1a774abb683.png",
     "static/media/githubIcon.png": "/static/media/githubIcon.e057f2ad88748275be16.png",
     "static/media/linkedInIcon.png": "/static/media/linkedInIcon.3b951cc7a8226f6865c0.png",
+    "static/media/apiIcon.png": "/static/media/apiIcon.a55e45c12ccf58ce3f6d.png",
+    "static/media/typescript.png": "/static/media/typescript.16b157ea18cd87601675.png",
+    "static/media/postico.png": "/static/media/postico.9bc72bb9f3fecb358395.png",
+    "static/media/netifly.webp": "/static/media/netifly.1a87c9dc1870e6b0884e.webp",
+    "static/media/heroku.png": "/static/media/heroku.f9795435780c7c57a728.png",
+    "static/media/thunderclient.webp": "/static/media/thunderclient.38c7b7efc8704c7f727e.webp",
     "index.html": "/index.html",
-    "static/media/avatarArray": "/static/media/avatarArray.67d62fbb2d2e97146f75",
-    "main.39f86afa.css.map": "/static/css/main.39f86afa.css.map",
-    "main.b63bbfe4.js.map": "/static/js/main.b63bbfe4.js.map"
+    "main.3d540053.css.map": "/static/css/main.3d540053.css.map",
+    "main.ead91142.js.map": "/static/js/main.ead91142.js.map"
   },
   "entrypoints": [
-    "static/css/main.39f86afa.css",
-    "static/js/main.b63bbfe4.js"
+    "static/css/main.3d540053.css",
+    "static/js/main.ead91142.js"
   ]
 }
