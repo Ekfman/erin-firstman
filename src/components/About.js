@@ -110,24 +110,24 @@ const About = () => {
                     <p> JavaScript</p>
                   </div>
                   <div className="tools">
-                    <img
+                    <Image fluid
                       alt="React Icon"
                       src={require("./assets/tech_pngs/react.png")}
-                    ></img>
+                    ></Image>
                     <p> React</p>
                   </div>
                   <div className="tools">
-                    <img
+                    <Image fluid
                       alt="Typescript Icon"
                       src={require("./assets/tech_pngs/typescript.png")}
-                    ></img>
+                    ></Image>
                     <p> Typescript</p>
                   </div>
                   <div className="tools">
-                    <img
+                    <Image fluid
                       alt="HTML5 Icon"
                       src={require("./assets/tech_pngs/html.png")}
-                    ></img>
+                    ></Image>
                     <p> HTML5</p>
                   </div>
                   <div className="tools">
