@@ -1,6 +1,6 @@
 import "./projects.css";
 import { useInView } from "react-intersection-observer";
-import { Col, Row, Container } from "react-bootstrap";
+import { Col, Row, Container as div } from "react-bootstrap";
 import 'animate.css'
 
 const Projects = () => {
@@ -11,21 +11,21 @@ const Projects = () => {
   console.log(projOneVisible);
 
   return (
-    <Container
+    <div
       id="projects"
       className="margin-top"
       style={{ "padding-bottom": "8em"}}
-      fluid
     >
       <Row>
         <Col></Col>
-        <Col lg={12}>
+        <center>
+        <Col lg={10}>
           <Row>
             <h2
               style={{
                 textAlign: "center",
                 "margin-top": "3em",
-                "font-size": "2.1em",
+                "font-size": "2em",
               }}
             >
               MY PROJECTS
@@ -33,7 +33,7 @@ const Projects = () => {
           </Row>
           <div className="project-container" ref={projectOne}>
             <Row style={{"height": "100%", "align-items": "center"}}>
-              <Col md style={{ "text-align": "center" }} 
+              <Col md style={{ "text-align": "center", "align-items": "space-between" }} 
                 className= {projOneVisible
                 ? "projectImg-title-animation"
                 : "projectImg-title"}
@@ -191,9 +191,10 @@ const Projects = () => {
           </div>
           
         </Col>
+        </center>
         <Col></Col>
       </Row>
-    </Container>
+    </div>
   );
 };
 

@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 import { useInView } from "react-intersection-observer";
-import { Col, Row, Container } from "react-bootstrap";
+import { Col, Row, Container as div } from "react-bootstrap";
 
 
 const Contact = () => {
@@ -32,7 +32,7 @@ const Contact = () => {
       );
   };
   return (
-    <Container className="contact-container" ref={contactContainer} fluid>
+    <div className="contact-container" ref={contactContainer}>
       <Row id="contact" className="form">
         <Col className="hello-div">
           <Row>
@@ -79,7 +79,7 @@ const Contact = () => {
               <br></br>
               <Row>
                 <label>MESSAGE</label>
-                <textarea style={{"height": "10em", "width": "50em"}} name="message"></textarea>
+                <textarea style={{"height": "10em", "width": "100%"}} name="message"></textarea>
               </Row>
               <Row>
                 <center><button className="send" type="submit" value="Send" onClick={sendEmail}>
@@ -91,7 +91,7 @@ const Contact = () => {
           </form>
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 };
 

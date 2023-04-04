@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import "./about.css";
 import { useInView } from "react-intersection-observer";
-import {Image} from "react-bootstrap"
 
 const About = () => {
   const { ref: aboutContainer, inView: bioVisible } = useInView();
@@ -103,31 +102,31 @@ const About = () => {
                 <center><h3>Front-end Skills</h3></center>
                 <div className="technologies">
                   <div className="tools">
-                    <Image fluid
+                    <img
                       alt="JavaScript Icon"
                       src={require("./assets/tech_pngs/javascript.png")}
-                    ></Image>
+                    ></img>
                     <p> JavaScript</p>
                   </div>
                   <div className="tools">
-                    <Image fluid
+                    <img
                       alt="React Icon"
                       src={require("./assets/tech_pngs/react.png")}
-                    ></Image>
+                    ></img>
                     <p> React</p>
                   </div>
                   <div className="tools">
-                    <Image fluid
+                    <img
                       alt="Typescript Icon"
                       src={require("./assets/tech_pngs/typescript.png")}
-                    ></Image>
+                    ></img>
                     <p> Typescript</p>
                   </div>
                   <div className="tools">
-                    <Image fluid
+                    <img
                       alt="HTML5 Icon"
                       src={require("./assets/tech_pngs/html.png")}
-                    ></Image>
+                    ></img>
                     <p> HTML5</p>
                   </div>
                   <div className="tools">
@@ -208,10 +207,10 @@ const About = () => {
                     <p>Express</p>
                   </div>
                   <div className="tools">
-                    <Image
+                    <img
                       alt="PSQL Icon"
                       src={require("./assets/tech_pngs/psql.png")}
-                    ></Image>
+                    ></img>
                     <p>PostgreSQL</p>
                   </div>
                   <div className="tools">
