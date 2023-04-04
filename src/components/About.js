@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import "./about.css";
 import { useInView } from "react-intersection-observer";
+import {Image} from "react-bootstrap"
 
 const About = () => {
   const { ref: aboutContainer, inView: bioVisible } = useInView();
@@ -102,10 +103,10 @@ const About = () => {
                 <center><h3>Front-end Skills</h3></center>
                 <div className="technologies">
                   <div className="tools">
-                    <img
+                    <Image fluid
                       alt="JavaScript Icon"
                       src={require("./assets/tech_pngs/javascript.png")}
-                    ></img>
+                    ></Image>
                     <p> JavaScript</p>
                   </div>
                   <div className="tools">
@@ -207,10 +208,10 @@ const About = () => {
                     <p>Express</p>
                   </div>
                   <div className="tools">
-                    <img
+                    <Image
                       alt="PSQL Icon"
                       src={require("./assets/tech_pngs/psql.png")}
-                    ></img>
+                    ></Image>
                     <p>PostgreSQL</p>
                   </div>
                   <div className="tools">

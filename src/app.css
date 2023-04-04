@@ -37,7 +37,7 @@ h3 {
 
 p {
     font-family:'Barlow Condensed', sans-serif;
-    font-size: 1.3em;
+    /* font-size: 1.3em; */
     line-height: 1.5em;
     color: #dad5cd;
     margin-top: -20px;

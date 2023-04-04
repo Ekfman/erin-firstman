@@ -85,7 +85,7 @@ const Projects = () => {
             </Row>
           </div>
           <div className="project-container" ref={projTwo}>
-            <Row>
+            <Row style={{"display": "flex", "align-items": "center"}}>
               <Col md
               className={
                   projOneVisible ? "projectImg-animation2" : "projectImg"}
