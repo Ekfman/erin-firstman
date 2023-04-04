@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-import avatarArr from "./assets/avatarArray";
 import "./about.css";
 import { useInView } from "react-intersection-observer";
 
@@ -48,12 +47,11 @@ const About = () => {
     <div className="parentContainer" id="about">
       <center>
         <h3 className="quote">
-          "Coding is the greatest jig-saw puzzle to solve." - Mark Zuckerberg (rumored)
+          {/* "Coding is the greatest jig-saw puzzle to solve." - Mark Zuckerberg (rumored) */}
       </h3>
       </center>
       <div>
         <div className="imgBio" id="scroll-item" ref={aboutContainer}>
-          {/* <div className="puzzle"> */}
           <div className={bioVisible ? "puzzle-animation" :"puzzle"}>
             <div className="puzzle-top">
               <img
@@ -88,8 +86,8 @@ const About = () => {
             {!meHover && !frontHover && !toolsHover && !backHover && <h3 className={ hoverOver && "hover-animation"}>Hover over a puzzle piece</h3>}
             {meHover && (
               <div className={hoverOver && "under-text-animation"}>
-                <h3>Who am I?</h3>
-                <p className="blurb"> I am addicted to creation and solving problems</p>
+                <h3 style={{"margin-bottom": "1em"}}>Who am I?</h3>
+                <p className="blurb"> I am addicted to creation and solving problems.</p>
                 <h4>Achiever</h4>
                 <p>Constantly setting and achieving short- and long-term goals</p>
                 <h4>Reliable</h4>
@@ -101,49 +99,49 @@ const About = () => {
             <div ref={techContainer}>
             {frontHover && (
               <div className={iconsVisible ? "bio-description-wrapper-animation" : "bio-description-wrapper"}>
-                <h3>Front-end Skills</h3>
+                <center><h3>Front-end Skills</h3></center>
                 <div className="technologies">
                   <div className="tools">
                     <img
                       alt="JavaScript Icon"
                       src={require("./assets/tech_pngs/javascript.png")}
                     ></img>
-                    <p>JavaScript</p>
+                    <p> JavaScript</p>
                   </div>
                   <div className="tools">
                     <img
                       alt="React Icon"
                       src={require("./assets/tech_pngs/react.png")}
                     ></img>
-                    <p>React</p>
+                    <p> React</p>
                   </div>
                   <div className="tools">
                     <img
-                      alt="Redux Icon"
-                      src={require("./assets/tech_pngs/redux.png")}
+                      alt="Typescript Icon"
+                      src={require("./assets/tech_pngs/typescript.png")}
                     ></img>
-                    <p>Redux</p>
+                    <p> Typescript</p>
                   </div>
                   <div className="tools">
                     <img
                       alt="HTML5 Icon"
                       src={require("./assets/tech_pngs/html.png")}
                     ></img>
-                    <p>HTML5</p>
+                    <p> HTML5</p>
                   </div>
                   <div className="tools">
                     <img
                       alt="CSS3 Icon"
                       src={require("./assets/tech_pngs/css.png")}
                     ></img>
-                    <p>CSS3</p>
+                    <p> CSS3</p>
                   </div>
                 </div>
               </div>
             )}
             {toolsHover && (
               <div className={iconsVisible ? "bio-description-wrapper-animation" : "bio-description-wrapper"}>
-                <h3>Tools</h3>
+                <center><h3>Tools</h3></center>
                 <div className="technologies">
                   <div className="tools">
                     <img
@@ -192,7 +190,7 @@ const About = () => {
             )}
             {backHover && (
               <div className={iconsVisible ? "bio-description-wrapper-animation" : "bio-description-wrapper"}>
-                <h3>Back-end Skills</h3>
+                <center><h3>Back-end Skills</h3></center>
                 <div className="technologies">
                   <div className="tools">
                     <img

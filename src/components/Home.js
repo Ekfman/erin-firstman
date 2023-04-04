@@ -6,7 +6,6 @@ import Col from "react-bootstrap/Col";
 const Home = () => {
   return (
     <div id="home" fluid className="hero">
-      {/* <Row  className="test" style={{"text-align": "center", "alignItems": "center", "justifyContent": "center"}}> */}
       <h1>ERIN FIRSTMAN</h1>
       <h2 className="hero-sub">FULL-STACK JAVASCRIPT WEB DEVELOPER</h2>
     </div>

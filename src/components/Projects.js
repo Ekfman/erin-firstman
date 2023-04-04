@@ -2,7 +2,6 @@ import "./projects.css";
 import { useInView } from "react-intersection-observer";
 import { Col, Row, Container } from "react-bootstrap";
 import 'animate.css'
-import TrackVisibility from "react-on-screen";
 
 const Projects = () => {
   const { ref: projectOne, inView: projOneVisible } = useInView();
@@ -78,13 +77,8 @@ const Projects = () => {
               className={
                 projOneVisible ? "projectImg-animation" : "projectImg"
               }
-                // className="col-xs-12"
               >
-                {/* <div className={
-                  projOneVisible ? "projectImg-animation" : "projectImg"
-                }></div> */}
                 <img
-                  // className="projectImg"
                   src={require("./assets/e-journal_imgs/calendarView.png")}
                 ></img>
               </Col>
@@ -97,7 +91,6 @@ const Projects = () => {
                   projOneVisible ? "projectImg-animation2" : "projectImg"}
                 >
                 <img
-                  // className="projectImg"
                   src={require("./assets/e-commerce_imgs/homescreen.png")}
                 ></img>
               </Col>
@@ -124,7 +117,7 @@ const Projects = () => {
                   Registered users can view purchase history, and admins can
                   access user information.
                 </p>
-                <p style={{ "margin-top": "1em" }}>
+                <p className="collab" style={{ "margin-top": "1em" }}>
                   (Collaborators: Michael McEwing, Thuan Tran, Kim Troung)
                 </p>
                 <p className="small-print">
@@ -155,7 +148,6 @@ const Projects = () => {
                   ? "projectImg-title-animation"
                   : "projectImg-title"
               }>
-
                 <h3>The Auction Attic</h3>
                 <div className="tech">
                   <p>JavaScript</p>
@@ -192,7 +184,6 @@ const Projects = () => {
               }
               >
               <img
-                // className="projectImg"
                 src={require("./assets/secondhandStore/home.png")}
               ></img>
             </Col>
@@ -202,96 +193,6 @@ const Projects = () => {
         </Col>
         <Col></Col>
       </Row>
-      {/* <center>
-        <h2 className={projHeadVis ? "projHead-animate" : "project-title"}>
-          MY PROJECTS
-        </h2>
-        <div className="project-container" ref={projectContainer}>
-          <div
-            className={projectVisible ? "project-animate" : "projectImg-title"}
-          >
-            <img
-              className="projectImg"
-              src={require("./assets/e-journal_imgs/calendarView.png")}
-            ></img>
-            <h3>
-              Confidant
-              <p
-                className={
-                  projectVisible ? "project-type-animate" : "project-type"
-                }
-              >
-                electronic journal
-              </p>
-            </h3>
-            <p className="project-description">
-              Confidant is for those who enjoy journaling, but don't have the
-              time or energy. When nostalgia or curiousity hits, users can
-              easily find and view their past entries.
-            </p>
-            <a target="_blank" href="https://confidant.herokuapp.com/">
-              <button>Check it out</button>
-            </a>
-          </div>
-          <div
-            className={projectVisible ? "project-animate" : "projectImg-title"}
-          >
-            <img
-              className="projectImg"
-              src={require("./assets/e-commerce_imgs/homescreen.png")}
-            ></img>
-            <h3>
-              Sticky Situations{" "}
-              <p
-                className={
-                  projectVisible ? "project-type-animate" : "project-type"
-                }
-              >
-                e-commerce site
-              </p>
-            </h3>
-            <p className="project-description">
-              Personalize your items with minimalistic sticker designs.
-              Registered users can view purchase
-              history, and admins can access user information.
-            </p>
-            <a
-            target="_blank"
-              href={
-                "https://www.youtube.com/watch?v=GfMReVr7MLk&list=PLH8yf4pGZM236BFvuXyBrz1M5CGdc8zRe&index=5"
-              }
-            >
-              <button>Check it out</button>
-            </a>
-          </div>
-          <div
-            className={projectVisible ? "project-animate" : "projectImg-title"}
-          >
-            <img
-              className="projectImg"
-              src={require("./assets/secondhandStore/home.png")}
-            ></img>
-            <h3>
-              The Auction Attic
-              <p
-                className={
-                  projectVisible ? "project-type-animate" : "project-type"
-                }
-              >
-                secondhand marketplace
-              </p>
-            </h3>
-            <p className="project-description">
-              All users can browse and search for secondhand items. Registered
-              users can post, edit and delete listings, and also send and
-              receieve inquiries.
-            </p>
-            <a target="_blank" href="https://the-auction-attic.netlify.app/">
-              <button className="secondhand-button">Check it out</button>
-            </a>
-          </div>
-        </div>
-      </center> */}
     </Container>
   );
 };
