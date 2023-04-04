@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import "./about.css";
 import { useInView } from "react-intersection-observer";
 
