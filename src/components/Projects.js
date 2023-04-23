@@ -61,8 +61,8 @@ const Projects = () => {
                   it to initially load.
                 </p>
                 <div className="project-access">
-                  <a target="_blank" href="https://confidant.herokuapp.com/">
-                    <button>Live Site</button>
+                  <a target="_blank" href="https://drive.google.com/file/d/1vzqOTnmClGvsiaG1_AjkK-_pscTBSe3V/view">
+                    <button>Demo</button>
                   </a>
                   <a
                     target="_blank"
@@ -125,8 +125,8 @@ const Projects = () => {
                   it to initially load.
                 </p>
                 <div className="project-access">
-                  <a target="_blank" href="https://confidant.herokuapp.com/">
-                    <button>Live Site</button>
+                  <a target="_blank" href="https://www.youtube.com/watch?v=GfMReVr7MLk&list=PLH8yf4pGZM236BFvuXyBrz1M5CGdc8zRe&index=6&ab_channel=CSEBootcamps">
+                    <button>Demo</button>
                   </a>
                   <a
                     target="_blank"

@@ -195,11 +195,6 @@
     opacity: 0;
 }
 
-.projects{
-    margin-top: 150px;
-    border: 2px solid black;
-}
-
 .project-access {
     display: flex;
     justify-content: space-around;
