@@ -51,10 +51,9 @@ const Projects = () => {
                   <p>RESTful API</p>
                 </div>
                 <p className="project-description">
-                  An electronic journal for those who enjoy writing but don't
-                  have enough time or energy. When nostalgia or curiousity hits,
-                  users can easily find and view their past entries. Intuitive
-                  UI, mimicking an event calendar.
+                  A platform to publish private journal entries which can be easily retrieved by the user. 
+                  Intuitive design that mimicks electronic scheduling where users
+                  can click any day to write an entry for, and view past entries by month and year.
                 </p>
                 {/* <p className="small-print">
                   Note: App hosted on Heroku, please allow up to 30 seconds for
