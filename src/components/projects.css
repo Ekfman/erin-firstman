@@ -5,7 +5,7 @@
     padding-bottom: 2.8em;
     padding-top: 2.8em;
     justify-content: center;
-    width: 90%;
+    width: 80%;
 }
 
   @media screen and (min-width: 960px) {
@@ -31,13 +31,14 @@
     .project-container{
         display: flex;
         flex-direction: column;
-        padding-right: 3em;
+        /* padding-right: 3em; */
     }
     .project-description{
         font-size: 2vh;
     }
     .projectImg-animation {
         margin-top: 3em;
+
       }
       .projectImg-animation2 {
         order: 6;
@@ -146,14 +147,14 @@
 }
 
 .projectImg{
-    margin-left: 1em;
+    /* margin-left: 1em; */
     align-items: center;
     justify-content: center;
     display: flex;
 }
 
 .projectImg-animation{
-    margin-left: 1em;
+    /* margin-left: 1em; */
     align-items: center;
     justify-content: center;
     display: flex;

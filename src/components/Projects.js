@@ -32,7 +32,7 @@ const Projects = () => {
             </h2>
           </Row>
           <div className="project-container" ref={projectOne}>
-            <Row style={{"height": "100%", "align-items": "center"}}>
+            <Row style={{"height": "100%", "align-items": "center", "justify-content": "center"}}>
               <Col md style={{ "text-align": "center", "align-items": "space-between" }} 
                 className= {projOneVisible
                 ? "projectImg-title-animation"
