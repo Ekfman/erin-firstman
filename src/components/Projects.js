@@ -42,7 +42,7 @@ const Projects = () => {
                 <div className="tech">
                   <p>JavaScript</p>
                   <p>React</p>
-                  <p>Redux</p>
+                  {/* <p>Redux</p> */}
                   <p>CSS3</p>
                   <p>HTML5</p>
                   <p>Node</p>
@@ -56,10 +56,10 @@ const Projects = () => {
                   users can easily find and view their past entries. Intuitive
                   UI, mimicking an event calendar.
                 </p>
-                <p className="small-print">
+                {/* <p className="small-print">
                   Note: App hosted on Heroku, please allow up to 30 seconds for
                   it to initially load.
-                </p>
+                </p> */}
                 <div className="project-access">
                   <a target="_blank" href="https://drive.google.com/file/d/1vzqOTnmClGvsiaG1_AjkK-_pscTBSe3V/view">
                     <button>Demo</button>
@@ -120,10 +120,10 @@ const Projects = () => {
                 <p className="collab" style={{ "margin-top": "1em" }}>
                   (Collaborators: Michael McEwing, Thuan Tran, Kim Troung)
                 </p>
-                <p className="small-print">
+                {/* <p className="small-print">
                   Note: App hosted on Heroku, please allow up to 30 seconds for
                   it to initially load.
-                </p>
+                </p> */}
                 <div className="project-access">
                   <a target="_blank" href="https://www.youtube.com/watch?v=GfMReVr7MLk&list=PLH8yf4pGZM236BFvuXyBrz1M5CGdc8zRe&index=6&ab_channel=CSEBootcamps">
                     <button>Demo</button>
@@ -166,7 +166,7 @@ const Projects = () => {
                     target="_blank"
                     href="https://the-auction-attic.netlify.app/"
                   >
-                    <button className="secondhand-button">Live Site</button>
+                    <button className="secondhand-button">Site</button>
                   </a>
                   <a
                     target="_blank"

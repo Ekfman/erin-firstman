@@ -31,6 +31,7 @@
     .project-container{
         display: flex;
         flex-direction: column;
+        padding-right: 3em;
     }
     .project-description{
         font-size: 2vh;
@@ -245,8 +246,4 @@
     font-size: .8em;
     font-style: italic;
     margin-top: 1em;
-}
-
-.projectImg-title a {
-    width: 100%;
 }
