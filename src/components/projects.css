@@ -38,6 +38,14 @@
     .projectImg-animation {
         margin-top: 3em;
       }
+      .projectImg-animation2 {
+        order: 6;
+        margin-top: 3em;
+      }
+      .projectImg{
+        order: 6;
+        margin-top: 3em;
+      }
   }
   
 .margin-top{
