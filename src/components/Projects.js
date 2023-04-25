@@ -60,7 +60,7 @@ const Projects = () => {
                   it to initially load.
                 </p> */}
                 <div className="project-access">
-                  <a target="_blank" href="https://drive.google.com/file/d/1vzqOTnmClGvsiaG1_AjkK-_pscTBSe3V/view">
+                  <a target="_blank" href="https://youtu.be/h_6Ovp98eRY">
                     <button>Demo</button>
                   </a>
                   <a
