@@ -52,8 +52,8 @@ const Projects = () => {
                 </div>
                 <p className="project-description">
                   A platform to publish private journal entries which can be easily retrieved by the user. 
-                  Intuitive design that mimicks electronic scheduling where users
-                  can click any day to write an entry for, and view past entries by month and year.
+                  An intuitive design that mimics electronic scheduling where users
+                  can click any day to write an entry for and view past entries by month and year.
                 </p>
                 {/* <p className="small-print">
                   Note: App hosted on Heroku, please allow up to 30 seconds for

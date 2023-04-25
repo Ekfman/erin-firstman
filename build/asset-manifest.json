@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f46a0dd9.css",
-    "main.js": "/static/js/main.f557abb6.js",
+    "main.js": "/static/js/main.67716c10.js",
     "static/media/calendarView.png": "/static/media/calendarView.e809b9c5bcaf28468fbb.png",
     "static/media/homescreen.png": "/static/media/homescreen.2f97970d33681b9e6959.png",
     "static/media/home.png": "/static/media/home.7862aea08e647146fe05.png",
@@ -26,10 +26,10 @@
     "static/media/thunderclient.webp": "/static/media/thunderclient.38c7b7efc8704c7f727e.webp",
     "index.html": "/index.html",
     "main.f46a0dd9.css.map": "/static/css/main.f46a0dd9.css.map",
-    "main.f557abb6.js.map": "/static/js/main.f557abb6.js.map"
+    "main.67716c10.js.map": "/static/js/main.67716c10.js.map"
   },
   "entrypoints": [
     "static/css/main.f46a0dd9.css",
-    "static/js/main.f557abb6.js"
+    "static/js/main.67716c10.js"
   ]
 }
