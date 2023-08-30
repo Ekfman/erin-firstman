@@ -15,12 +15,6 @@ const Nabvar = () => {
               <Nav.Link href="#projects">// PROJECTS</Nav.Link>
               <Nav.Link href="#contact">// SAY HELLO</Nav.Link>
             </div>
-              <Nav.Link
-                target="_blank"
-                href="https://drive.google.com/drive/u/0/search?q=Firstman_Resume"
-              >
-                <div className="resume">RESUME</div>
-              </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
