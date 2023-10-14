@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "client:dev": "react-scripts start",
-    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "client:build": "react-scripts build",
     "build": "npx react-scripts build"
   },

@@ -5,9 +5,8 @@ import "./app.css"
 const App = () => {
     return (
         <div>
+            <h1 className="hi">Hello</h1>
             <Navbar />
-
-    <h1 class="bg-red-400">Hello</h1>
         </div>
     )
 }
