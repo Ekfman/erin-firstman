@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "client:dev": "react-scripts start",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "client:build": "react-scripts build",
     "build": "npx react-scripts build"
   },
@@ -23,6 +24,7 @@
     "react-router-dom": "^6.8.1",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.9",
+    "tailwindcss": "^3.3.3",
     "webpack": "^5.75.0"
   },
   "browserslist": {
