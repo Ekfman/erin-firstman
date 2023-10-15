@@ -122,22 +122,22 @@
         display: table;
     }
 
-    #mobile-menu {
+    .navbar_toggle{
         position: absolute;
         top: 20%;
         right: 5%;
         transform: translate(5%, 20%);
     }
 
-    #mobile-menu.is-active .bar:nth-child(2){
+    .navbar_toggle.is-active .bar:nth-child(2){
         opacity: 0;
     }
 
-    #mobile-menu.is-active .bar:nth-child(2){
+    .navbar_toggle.is-active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
     }
 
-    #mobile-menu.is-active .bar:nth-child(3){
+    .navbar_toggle.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
 }
