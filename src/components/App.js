@@ -1,6 +1,7 @@
 import { Navbar } from "./Navbar";
 import "./app.css"
 import { Hero } from "./Hero";
+import { Projects } from "./Projects";
 
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
         <div>
             <Navbar />
             <Hero />
+            <Projects />
         </div>
     )
 }

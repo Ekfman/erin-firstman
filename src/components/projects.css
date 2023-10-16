@@ -1,0 +1,213 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.projects h1 {
+  background-color: #ff8177;
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  background-size: 100%;
+  font-size: 2.5rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.projects_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.projects_card {
+  margin: 1rem;
+  height: 525px;
+  width: 600px;
+  border-radius: 4px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, .886) 100%
+    ),
+    url("./assets/e-journal_imgs/calendarView.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+.projects_card:nth-child(3) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.886) 100%
+    ),
+    url("./assets/e-commerce_imgs/homescreen.png");
+}
+
+.projects_card:nth-child(4) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, .886) 100%
+    ),
+    url("./assets/secondhandStore/home.png");
+}
+
+.projects h2 {
+  position: absolute;
+  top: 350px;
+  left: 30px;
+}
+
+.projects_card p {
+  position: absolute;
+  top: 400px;
+  left: 30px;
+}
+
+.projects_card button {
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  position: absolute;
+  top: 480px;
+  left: 30px;
+  font-size: 1rem;
+  background-color: #f77062;
+}
+
+.projects_card:hover {
+  transform: scale(1.075);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .projects {
+    font-size: 2rem;
+  }
+
+  .projects h1 {
+    font-size: 3rem;
+    margin-top: 12rem;
+  }
+
+  .projects_container {
+    grid-template-columns: 1fr;
+  }
+
+  .projects h2 {
+    font-size: 2rem;
+    top: 250px;
+    left: 14px;
+    padding-left: 20px;
+  }
+
+  .projects p {
+    font-size: 1.2rem;
+    top: 300px;
+    left: 14px;
+    padding-left: 20px;
+
+  }
+
+  .projects_card button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    position: absolute;
+    top: 420px;
+    left: 400px;
+    font-size: 1rem;
+    background-color: #f77062;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projects {
+    height: 1400px;
+  }
+
+  .projects h1 {
+    font-size: 1.8rem;
+  }
+
+  .projects h2 {
+    font-size: 2rem;
+    top: 250px;
+    left: 14px;
+    padding-left: 0px;
+  }
+
+  .projects p {
+    font-size: 1.2rem;
+    top: 300px;
+    left: 14px;
+    padding-left: 0px;
+  }
+
+  .projects_card {
+    width: 350px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.886) 100%
+      ),
+      url("./assets/e-journal_imgs/calendarView.png");
+  }
+  
+  .projects_card:nth-child(3) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.886) 100%
+      ),
+      url("./assets/e-commerce_imgs/homescreen.png");
+  }
+  
+  .projects_card:nth-child(4) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, .886) 100%
+      ),
+      url("./assets/secondhandStore/home.png");
+  }
+
+  .projects_container {
+    grid-template-columns: 1fr;
+  }
+
+  .projects_card button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    position: absolute;
+    top: 420px;
+    left: 210px;
+    font-size: 1rem;
+    background-color: #f77062;
+  }
+
+
+}
