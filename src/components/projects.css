@@ -6,22 +6,13 @@
 }
 
 .projects h1 {
-  background-color: #ff8177;
-  background-image: linear-gradient(
-    to right,
-    #ff8177 0%,
-    #ff867a 0%,
-    #ff8c7f 21%,
-    #f99185 52%,
-    #cf556c 78%,
-    #b12a5b 100%
-  );
+  background-image: linear-gradient(to top, #f610f9  0%, #b721ff 100%);
   background-size: 100%;
-  font-size: 2.5rem;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  font-size: 2.5rem;
 }
 
 .projects_container {
@@ -30,6 +21,7 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 1rem;
+  /* height: 90vh; */
 }
 
 .projects_card {
@@ -38,16 +30,24 @@
   width: 600px;
   border-radius: 4px;
   background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(17, 17, 17, .886) 100%
-    ),
-    url("./assets/e-journal_imgs/calendarView.png");
+    to bottom,
+    rgba(157, 157, 157, 0) 0%,
+    rgba(90, 90, 90, 0.886) 100%
+  );
   background-size: cover;
   background-position: center;
   position: relative;
   color: white;
   font-size: 1.2rem;
+}
+
+.projects_card:nth-child(2) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.886) 100%
+    ),
+    url("./assets/e-journal_imgs/calendarView.png");
 }
 
 .projects_card:nth-child(3) {
@@ -63,7 +63,7 @@
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
-      rgba(17, 17, 17, .886) 100%
+      rgba(17, 17, 17, 0.886) 100%
     ),
     url("./assets/secondhandStore/home.png");
 }
@@ -90,7 +90,8 @@
   top: 430px;
   left: 30px;
   font-size: 1rem;
-  background-color: #f77062;
+  background-image: linear-gradient(to top, #00b3ff 0%, #a56af8 100%);
+  background-size: 100%;
 }
 
 .projects_card:hover {
@@ -106,7 +107,6 @@
 
   .projects h1 {
     font-size: 3rem;
-    margin-top: 12rem;
   }
 
   .projects_container {
@@ -125,7 +125,6 @@
     top: 300px;
     left: 14px;
     padding-left: 20px;
-
   }
 
   .projects_card button {
@@ -174,7 +173,7 @@
       ),
       url("./assets/e-journal_imgs/calendarView.png");
   }
-  
+
   .projects_card:nth-child(3) {
     background-image: linear-gradient(
         to bottom,
@@ -183,12 +182,12 @@
       ),
       url("./assets/e-commerce_imgs/homescreen.png");
   }
-  
+
   .projects_card:nth-child(4) {
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, .886) 100%
+        rgba(17, 17, 17, 0.886) 100%
       ),
       url("./assets/secondhandStore/home.png");
   }
@@ -209,6 +208,48 @@
     font-size: 1rem;
     background-color: #f77062;
   }
+}
 
+.main_btn {
+  font-size: 1rem;
+  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  margin-top: 2rem;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
 
+.main_btn a {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-decoration: none;
+}
+
+.main_btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #4837ff;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.main_btn:hover {
+  color: white;
+}
+
+.main_btn:hover:after {
+  width: 100%;
+}
+
+.main_img_container {
+  text-align: center;
 }

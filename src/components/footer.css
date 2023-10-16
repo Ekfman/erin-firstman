@@ -1,8 +1,10 @@
 .footer_container {
-    padding: 5rem 0;
+    padding: 2rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(49, 49, 52, 0.465);
+    margin-top: 4rem;
 }
 
 .linkedin{

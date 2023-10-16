@@ -13,29 +13,14 @@
 
 .navbar_container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 80px;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
-}
-
-#navbar_logo {
-    background-color: white;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb119 100% );
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-}   
+} 
 
 .fa-gem {
     margin-right: 0.5rem;
@@ -59,8 +44,12 @@
 }
 
 .navbar_links:hover {
-    color: #f77062;
+    color: #f610f9;
     transition: all 0.3s ease;
+}
+
+.navbar_links:active {
+    color: #f610f9;
 }
 
 @media screen and (max-width: 960px) {

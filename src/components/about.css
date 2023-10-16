@@ -1,14 +1,17 @@
-.about_me_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-self: center;
-  margin: 0 auto;
-  height: 40vh;
-  z-index: 1;
-  width: 100%;
-  max-width: 1300px;
-  margin-bottom: 6rem;
-  gap: 1rem;
+/* .about_me_container {
+    height: 90vh;
+} */
+
+.about_me_content_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    margin: 0 auto;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin-bottom: 6rem;
+    gap: 3rem;
 }
 
 .middleChild{
@@ -17,7 +20,7 @@
 .about_me_content p {
   margin-top: 1rem;
   font-size: 2rem;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 .about_me_btns_container {
@@ -28,17 +31,16 @@
   width: 100%;
   max-width: 1300px;
   margin-bottom: 8rem;
-
-  /* align-items: center;
-    justify-content: space-around;
-    margin-bottom: 4rem;
-    max-width: 100%; */
 }
 
 .techWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
 
+.about_me_btns:nth-child(2){
+    border-left: #b721ff solid 2px;
+    border-right: #b721ff solid 2px;
 }
 
 .icon_and_name {
@@ -62,11 +64,50 @@
   outline: none;
   border-radius: 4px;
   font-size: 1.5rem;
-  background-color: #f77062;
   margin: 1rem;
+  background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
 }
 
 .techIcon {
     width: 40px;
     height: 40px;
+}
+
+@media screen and (max-width: 960px) {
+    .about_me_btns_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1300px;
+        margin-bottom: 8rem;
+      }
+      .about_me_content_container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .about_me_btns:nth-child(2){
+        border-left: none;
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about_me_btns_container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0rem;
+    }
+
+    .about_me_container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .about_me_content p {
+        font-size: 1.5rem;
+      }
 }

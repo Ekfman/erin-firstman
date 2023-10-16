@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 import "./navbar.css";
 export function Navbar() {
 
@@ -11,9 +12,6 @@ export function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar_container">
-        <a href="/" id="navbar_logo">
-          ERIN'S PORTFOLIO
-        </a>
         <div onClick={menuClick} className={`navbar_toggle ${navToggle ? "is-active" : ""}`} id="mobile-menu">
           <span className="bar"></span>
           <span className="bar"></span>
@@ -21,22 +19,22 @@ export function Navbar() {
         </div>
         <ul className={`navbar_menu ${navToggle ? "active" : ""}`}>
           <li className="navbar_item">
-            <a href="/" className="navbar_links">
-              Home
-            </a>
+            <Link to="hero" smooth={true} duration={500} offset={-80} className="navbar_links">
+            Home
+            </Link>
           </li>
           <li className="navbar_item">
-            <a href="/" className="navbar_links">
+            <Link to="about" smooth={true} duration={500} offset={-80} className="navbar_links">
               About Me
-            </a>
+            </Link>
           </li>
           <li className="navbar_item">
-            <a href="/" className="navbar_links">
+            <Link to="projects" smooth={true} duration={500} offset={-80} className="navbar_links">
               Projects
-            </a>
+            </Link>
           </li>
           <li className="navbar_item">
-            <a href="/" className="navbar_links">
+            <a href="mailto:ekfirstman.email@gmail.com" className="navbar_links">
               Contact Me
             </a>
           </li>
