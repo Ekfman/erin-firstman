@@ -66,7 +66,7 @@ export function Projects() {
                 ) : (
                   <p>{project.description}</p>
                 )}
-                <a href={project.link} target="_blank">
+                <a href={project.link} target="_blank" className="proj_btn">
                   <button>{project.button}</button>
                 </a>
               </div>

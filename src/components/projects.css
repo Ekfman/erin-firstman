@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* height: 100vh; */
 }
 
 .projects h1 {
@@ -71,6 +70,7 @@
   position: absolute;
   top: 300px;
   left: 30px;
+  color: #f610f9;
 }
 
 .projects_card p {
@@ -79,19 +79,49 @@
   left: 30px;
 }
 
-.projects_card button {
+.proj_btn {
   color: white;
   padding: 10px 20px;
-  border: none;
   outline: none;
   border-radius: 4px;
-  position: absolute;
+  position: relative;
   top: 430px;
   left: 30px;
   font-size: 1rem;
   background-image: linear-gradient(to top, #00b3ff 0%, #a56af8 100%);
   background-size: 100%;
   white-space: nowrap;
+  padding: 14px 32px;
+  transition: all 0.35s;
+}
+
+.projects_card button {
+  position: relative;
+  z-index: 2;
+  color: white;
+  border: none;
+  background: none;
+
+}
+
+.proj_btn:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #f610f9;
+  transition: 0.35s;
+  border-radius: 4px;
+}
+
+.proj_btn:hover{
+  color: white;
+}
+
+.proj_btn:hover:after{
+  width: 100%;
 }
 
 .projects_card:hover {
@@ -101,6 +131,7 @@
 }
 
 @media screen and (max-width: 960px) {
+
   .projects {
     font-size: 2rem;
   }
@@ -127,24 +158,31 @@
     padding-left: 20px;
   }
 
-  .projects_card button {
+  /* .projects_card a {
     color: white;
     padding: 10px 20px;
     border: none;
     outline: none;
     border-radius: 4px;
-    position: absolute;
+    position: relative;
     top: 420px;
     left: 400px;
     font-size: 1rem;
     background-color: #f77062;
+  } */
+}
+
+@media screen and (max-width: 630px){
+  .projects_card {
+    width: 500px;
+  }
+
+  .projects_card a {
+    left: 350px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  /* .projects {
-    height: 1400px;
-  } */
 
   .projects h1 {
     font-size: 1.8rem;
@@ -196,7 +234,7 @@
     grid-template-columns: 1fr;
   }
 
-  .projects_card button {
+  .projects_card a {
     color: white;
     padding: 10px 20px;
     border: none;
@@ -210,46 +248,3 @@
   }
 }
 
-.main_btn {
-  font-size: 1rem;
-  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-  padding: 14px 32px;
-  border: none;
-  border-radius: 4px;
-  color: white;
-  margin-top: 2rem;
-  position: relative;
-  transition: all 0.35s;
-  outline: none;
-}
-
-.main_btn a {
-  position: relative;
-  z-index: 2;
-  color: white;
-  text-decoration: none;
-}
-
-.main_btn:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #4837ff;
-  transition: all 0.35s;
-  border-radius: 4px;
-}
-
-.main_btn:hover {
-  color: white;
-}
-
-.main_btn:hover:after {
-  width: 100%;
-}
-
-.main_img_container {
-  text-align: center;
-}

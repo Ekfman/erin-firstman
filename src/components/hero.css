@@ -46,46 +46,6 @@
     font-weight: 700;
 }
 
-.projects_card button {
-    font-size: 1rem;
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    position: relative;
-    transition: all 0.35s;
-    outline: none;
-}
-
-.projects_card button a {
-    position: relative;
-    z-index: 2;
-    color: white;
-    text-decoration: none;
-}
-
-.projects_card button:after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #4837ff;
-    transition: all 0.35s;
-    border-radius: 4px;
-    color: white;
-}
-
-.projects_card button:hover {
-    color: white;
-}
-
-.projects_card button:hover:after {
-    width: 100%;
-}
-
 .main_img_container {
     text-align: center;
 }
