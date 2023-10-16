@@ -39,7 +39,7 @@ export function About() {
         </div>
         <div className="about_me_btns_container">
           <div className="about_me_btns">
-            <button>Front-end</button>
+            <div className="label">Front-end</div>
             <div className="techWrapper">
               <div className="icon_and_name">
                 <img className="techIcon" alt="HTML Icon" src={htmlIcon}></img>
@@ -76,7 +76,7 @@ export function About() {
             </div>
           </div>
           <div className="about_me_btns">
-            <button>Back-end</button>
+            <div className="label">Back-end</div>
             <div className="techWrapper">
               <div className="icon_and_name">
                 <img className="techIcon" alt="Node Icon" src={nodeIcon}></img>
@@ -109,7 +109,7 @@ export function About() {
             </div>
           </div>
           <div className="about_me_btns">
-            <button>Tools</button>
+            <div className="label">Tools</div>
             <div className="techWrapper">
               <div className="icon_and_name">
                 <img className="techIcon" alt="Git icon" src={gitIcon}></img>

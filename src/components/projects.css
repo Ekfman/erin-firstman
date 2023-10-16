@@ -21,7 +21,6 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 1rem;
-  /* height: 90vh; */
 }
 
 .projects_card {
@@ -92,6 +91,7 @@
   font-size: 1rem;
   background-image: linear-gradient(to top, #00b3ff 0%, #a56af8 100%);
   background-size: 100%;
+  white-space: nowrap;
 }
 
 .projects_card:hover {
