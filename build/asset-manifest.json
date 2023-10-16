@@ -1,35 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.f46a0dd9.css",
-    "main.js": "/static/js/main.46af81f7.js",
+    "main.css": "/static/css/main.f735e17b.css",
+    "main.js": "/static/js/main.eab57bde.js",
     "static/media/calendarView.png": "/static/media/calendarView.e809b9c5bcaf28468fbb.png",
     "static/media/homescreen.png": "/static/media/homescreen.2f97970d33681b9e6959.png",
     "static/media/home.png": "/static/media/home.7862aea08e647146fe05.png",
-    "static/media/hero2.jpg": "/static/media/hero2.416072ce45c22e18ef24.jpg",
-    "static/media/puzzle_me.png": "/static/media/puzzle_me.c86c9ab27d793856e8a7.png",
-    "static/media/puzzle_backend.png": "/static/media/puzzle_backend.169edc5082f8d67875c6.png",
-    "static/media/puzzle_tools.png": "/static/media/puzzle_tools.a42167b5183e51c329c7.png",
-    "static/media/puzzle_frontend.png": "/static/media/puzzle_frontend.6b8ca9e9634f7924e962.png",
+    "static/media/avatar.png": "/static/media/avatar.71276b0e6b049e8ac9e9.png",
     "static/media/express.png": "/static/media/express.a6b01a8aa853642dc0b9.png",
     "static/media/psql.png": "/static/media/psql.c8891cc79d21bc263a06.png",
-    "static/media/webpack.png": "/static/media/webpack.47692505d122dbcae490.png",
     "static/media/node.png": "/static/media/node.732af66b37eea31e9f9b.png",
     "static/media/react.png": "/static/media/react.11b59729d3fa01935a5e.png",
     "static/media/css.png": "/static/media/css.3a4e9608e1a774abb683.png",
-    "static/media/githubIcon.png": "/static/media/githubIcon.e057f2ad88748275be16.png",
-    "static/media/linkedInIcon.png": "/static/media/linkedInIcon.3b951cc7a8226f6865c0.png",
     "static/media/apiIcon.png": "/static/media/apiIcon.a55e45c12ccf58ce3f6d.png",
     "static/media/typescript.png": "/static/media/typescript.16b157ea18cd87601675.png",
     "static/media/postico.png": "/static/media/postico.9bc72bb9f3fecb358395.png",
-    "static/media/netifly.webp": "/static/media/netifly.1a87c9dc1870e6b0884e.webp",
-    "static/media/heroku.png": "/static/media/heroku.f9795435780c7c57a728.png",
-    "static/media/thunderclient.webp": "/static/media/thunderclient.38c7b7efc8704c7f727e.webp",
     "index.html": "/index.html",
-    "main.f46a0dd9.css.map": "/static/css/main.f46a0dd9.css.map",
-    "main.46af81f7.js.map": "/static/js/main.46af81f7.js.map"
+    "main.f735e17b.css.map": "/static/css/main.f735e17b.css.map",
+    "main.eab57bde.js.map": "/static/js/main.eab57bde.js.map"
   },
   "entrypoints": [
-    "static/css/main.f46a0dd9.css",
-    "static/js/main.46af81f7.js"
+    "static/css/main.f735e17b.css",
+    "static/js/main.eab57bde.js"
   ]
 }
