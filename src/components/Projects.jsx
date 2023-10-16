@@ -1,43 +1,35 @@
 import "./projects.css";
-import journalImg from "./assets/e-journal_imgs/calendarView.png";
+import { cloneElement, useState } from "react";
 
 export function Projects() {
+
+    const [hover, setHover] = useState(null)
+
+    const handleMouseEnter = divId => setHover(divId)
+
+    const handleMouseLeave = () => setHover(null)
+
+    const projectInfo = [
+        {id: 1, title: "Twitter Clone", description: "A social media app modeled after X (Twitter), with a personal touch.", tech: "Tech Used: HTML, TailwindCSS, TypeScript, Next.js, Prisma, PlanetScale", button: "Coming Soon"},
+        {id: 2, title: "Confidant", description: "An electronic journal where users create journal entries and easily find past ones via a calendar.", tech: "Tech Used: HTML, CSS, JavaScript, React.js, Express.js, Node,js, PostgreSQL, RESTful API", button: "View Demo"},
+        {id: 3, title: "Sticky Situations", description: "An e-commerce site where users can purchase stickers (additional admin capability).", tech: "Tech Used: HTML, CSS, JavaScript, React.js, Express.js, Node,js, PostgreSQL, RESTful API", button: "View Demo"},
+        {id: 4, title: "The Auction Attic", description: "A secondhand marketplace for registered users to view items for sale and post their own listings.", tech: "Tech Used: HTML, CSS, JavaScript, RESTful API", button: "View Site"}
+    ]
+
+
   return (
     <div className="projects">
       <h1>My Projects</h1>
       <div className="projects_container">
-        <div className="projects_card">
-            <h2>Twitter Clone</h2>
-            <p>
-              A social media app modeled after X (Twitter), with a personal
-              touch.
-            </p>
-          <button>Soon To Be</button>
-        </div>
-        <div className="projects_card">
-            <h2>Confidant</h2>
-            <p>
-              An electronic journal where users create
-              journal entries and easily find past ones via a calendar.
-            </p>
-          <button>View Demo</button>
-          </div>
-        <div className="projects_card">
-            <h2>Sticky Situations</h2>
-            <p>
-              An e-commerce site where users can
-              purchase stickers (additional admin capability).
-            </p>
-          <button>View Demo</button>
-        </div>
-        <div className="projects_card">
-            <h2>The Auction Attic</h2>
-            <p>
-              A secondhand marketplace for registered users to view items for
-              sale and post their own listings.
-            </p>
-          <button>View Site</button>
-        </div>
+        {projectInfo.map ( project => {
+            return (
+                <div className="projects_card" key={project.id} onMouseEnter={ () => handleMouseEnter( project.id)} onMouseLeave={handleMouseLeave}>
+                    <h2>{project.title}</h2>
+                    {hover === project.id ? <p>{project.tech}</p> : <p>{project.description}</p>}
+                    <button>{project.button}</button>
+                </div>
+            )
+        })}
       </div>
     </div>
   );
