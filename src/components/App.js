@@ -3,6 +3,7 @@ import "./app.css"
 import { Hero } from "./Hero";
 import { Projects } from "./Projects";
 import { Footer } from "./Footer";
+import { About } from "./About";
 
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
         <div>
             <Navbar />
             <Hero />
+            <About />
             <Projects />
             <Footer />
         </div>

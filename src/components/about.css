@@ -1,0 +1,72 @@
+.about_me_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+  margin: 0 auto;
+  height: 40vh;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin-bottom: 6rem;
+  gap: 1rem;
+}
+
+.middleChild{
+    margin: 0px 12px 0 12px
+}
+.about_me_content p {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.about_me_btns_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1300px;
+  margin-bottom: 8rem;
+
+  /* align-items: center;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+    max-width: 100%; */
+}
+
+.techWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.icon_and_name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    gap: 1rem
+
+}
+
+.about_me_btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.about_me_btns button {
+  color: white;
+  padding: 10px 100px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  background-color: #f77062;
+  margin: 1rem;
+}
+
+.techIcon {
+    width: 40px;
+    height: 40px;
+}

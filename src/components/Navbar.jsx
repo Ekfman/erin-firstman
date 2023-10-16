@@ -12,7 +12,7 @@ export function Navbar() {
     <nav className="navbar">
       <div className="navbar_container">
         <a href="/" id="navbar_logo">
-          Erin Firstman
+          ERIN'S PORTFOLIO
         </a>
         <div onClick={menuClick} className={`navbar_toggle ${navToggle ? "is-active" : ""}`} id="mobile-menu">
           <span className="bar"></span>
