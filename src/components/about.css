@@ -20,6 +20,11 @@
 .about_me_content p {
   margin-top: 1rem;
   font-size: 2rem;
+  font-weight: bold;
+  background-image: linear-gradient(to top, #f610f9  0%, #b721ff 100%);
+    background-size: 100%;
+    padding: 14px;
+    border-radius: 14px;
   /* font-weight: 700; */
 }
 
