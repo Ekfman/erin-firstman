@@ -46,6 +46,15 @@
     font-weight: 700;
 }
 
+.creations {
+    background-image: linear-gradient(to top, #f610f9  0%, #b721ff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
 .main_img_container {
     text-align: center;
 }

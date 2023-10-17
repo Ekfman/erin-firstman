@@ -36,6 +36,7 @@
 .techWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px
 }
 
 .about_me_btns:nth-child(2){
